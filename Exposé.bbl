@@ -18,24 +18,85 @@
 
 
 \refsection{0}
-  \sortlist{nyt}{nyt}
-    \entry{NICK2016}{article}{}
+  \sortlist{nty}{nty}
+    \entry{iea2015}{misc}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=fd144f65f19df1c7adaa116c44ce2617}{Nick}{N\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=6bdabf4922fff6a5c82771e7f6391792}{Agency}{A\bibinitperiod}{International\bibnamedelima Energy}{I\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{fd144f65f19df1c7adaa116c44ce2617}
-      \strng{fullhash}{fd144f65f19df1c7adaa116c44ce2617}
-      \field{sortinit}{N}
-      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
-      \field{labelyear}{2016}
-      \field{datelabelsource}{}
+      \strng{namehash}{6bdabf4922fff6a5c82771e7f6391792}
+      \strng{fullhash}{6bdabf4922fff6a5c82771e7f6391792}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Testjournal}
-      \field{title}{Test}
-      \field{year}{2016}
+      \field{annotation}{Ist das ein „article``? http://www.iea.org/publications/freepublications/publication/KeyWorld_Statistics_2015.pdf}
+      \field{title}{Key world energy statistics}
+      \field{year}{2015}
+    \endentry
+    \entry{gartner}{url}{}
+      \name{author}{1}{}{%
+        {{hash=ce3d47204c2b9772ddfaa8f9dfdc7b11}{Inc.)}{I\bibinitperiod}{Christy\bibnamedelimb Pettey\bibnamedelima (Gartner}{C\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim (\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ce3d47204c2b9772ddfaa8f9dfdc7b11}
+      \strng{fullhash}{ce3d47204c2b9772ddfaa8f9dfdc7b11}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gartner Estimates ICT Industry Accounts for 2 Percent of Global CO2 Emissions}
+      \verb{url}
+      \verb http://www.gartner.com/newsroom/id/503867
+      \endverb
+      \warn{\item Datamodel: Entry 'gartner' (literatur.bib): Invalid format 'April 26, 2007' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{itu}{url}{}
+      \name{author}{1}{}{%
+        {{hash=271c375766c6387ce244b8534e37c1e3}{ITU}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{271c375766c6387ce244b8534e37c1e3}
+      \strng{fullhash}{271c375766c6387ce244b8534e37c1e3}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelnamesource}{author}
+    \endentry
+    \entry{carrier}{url}{}
+      \name{author}{1}{}{%
+        {{hash=f3328fdf7070ecba084e6c2e772f798c}{ITWissen}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{f3328fdf7070ecba084e6c2e772f798c}
+      \strng{fullhash}{f3328fdf7070ecba084e6c2e772f798c}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{real url date 2013}
+      \field{title}{NB (Netzbetreiber) - Carrier}
+      \field{urlday}{02}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb http://www.itwissen.info/definition/lexikon/Netzbetreiber-carrier-NB.html
+      \endverb
+    \endentry
+    \entry{statista}{url}{}
+      \name{author}{1}{}{%
+        {{hash=62182ca58a739daa8ddd8a48b7b19abb}{Statista}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{62182ca58a739daa8ddd8a48b7b19abb}
+      \strng{fullhash}{62182ca58a739daa8ddd8a48b7b19abb}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{http://de.statista.com/statistik/daten/studie/167998/umfrage/weltweiter-energiemix-nach-energietraeger/}
+      \field{title}{Verteilung der weltweiten Energieerzeugung nach Energieträger im Jahr 2013}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb http://de.statista.com/statistik/daten/studie/167998/umfrage/weltweiter-energiemix-nach-energietraeger/
+      \endverb
     \endentry
   \endsortlist
+  \missing{NICK2016}
 \endrefsection
 \endinput
 

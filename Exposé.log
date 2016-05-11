@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.6)  11 MAY 2016 08:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.6)  11 MAY 2016 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,7 +574,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear-icomp.dbx' not found.
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count163
@@ -674,16 +674,16 @@ Package biblatex Info: ... file 'blx-natbib.def' found.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-natbib.def
 File: blx-natbib.def 2015/04/19 v3.0 biblatex compatibility (PK/JW/AB)
 )
-Package biblatex Info: Trying to load bibliography style 'authoryear-icomp'...
-Package biblatex Info: ... file 'authoryear-icomp.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/authoryear-icomp.bbx
-File: authoryear-icomp.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/A
-B)
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -692,27 +692,29 @@ File: standard.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count268
 \c@bbx:relatedtotal=\count269
 )))
-Package biblatex Info: Trying to load citation style 'authoryear-icomp'...
-Package biblatex Info: ... file 'authoryear-icomp.cbx' found.
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/authoryear-icomp.cbx
-File: authoryear-icomp.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
+\c@cbx@tempcnta=\count270
+\c@cbx@tempcntb=\count271
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\footcites'.
-Package biblatex Info: Redefining '\footcitetexts'.
 Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.cfg
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
@@ -752,37 +754,23 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count270
+\Gread@gobject=\count272
 ))
 \Gin@req@height=\dimen132
 \Gin@req@width=\dimen133
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count271
-\float@exts=\toks26
-\float@box=\box28
-\@float@everytoks=\toks27
-\@floatcapt=\box29
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/afterpage.sty
-Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks28
-\AP@partial=\box30
-\AP@footins=\box31
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/moreverb/moreverb.sty
 Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks29
-\verbatim@line=\toks30
+\every@verbatim=\toks26
+\verbatim@line=\toks27
 \verbatim@in@stream=\read2
 )
-\tab@position=\count272
-\tab@size=\count273
-\listing@line=\count274
+\tab@position=\count273
+\tab@size=\count274
+\listing@line=\count275
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -802,20 +790,20 @@ File: german.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 (./Exposé.aux)
 \openout1 = `Exposé.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -851,19 +839,19 @@ LaTeX Font Info:    ... okay on input line 82.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 82.
+\AtBeginShipoutBox=\box28
+Package hyperref Info: Link coloring OFF on input line 84.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count275
+\c@section@level=\count276
 )
-LaTeX Info: Redefining \ref on input line 82.
-LaTeX Info: Redefining \pageref on input line 82.
-LaTeX Info: Redefining \nameref on input line 82.
+LaTeX Info: Redefining \ref on input line 84.
+LaTeX Info: Redefining \pageref on input line 84.
+LaTeX Info: Redefining \nameref on input line 84.
 
 (./Exposé.out) (./Exposé.out)
 \@outlinefile=\write4
@@ -876,26 +864,39 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Exposé.bbl' found.
- (./Exposé.bbl)
-Package biblatex Info: Reference section=0 on input line 82.
-Package biblatex Info: Reference segment=0 on input line 82.
+ (./Exposé.bbl
 
-ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 82.
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'gartner':
+(biblatex)                - Datamodel: Entry 'gartner' (literatur.bib): Invalid
+ format 'April 26, 2007' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                NICK2016
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 84.
+Package biblatex Info: Reference segment=0 on input line 84.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 84.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count276
+\scratchcounter=\count277
 \scratchdimen=\dimen134
-\scratchbox=\box33
-\nofMPsegments=\count277
-\nofMParguments=\count278
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count279
+\scratchbox=\box29
+\nofMPsegments=\count278
+\nofMParguments=\count279
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count280
 \MPscratchDim=\dimen135
-\MPnumerator=\count280
-\makeMPintoPDFobject=\count281
-\everyMPtoPDFconversion=\toks32
+\MPnumerator=\count281
+\makeMPintoPDFobject=\count282
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -903,8 +904,7 @@ Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
+(grfext)             [.pdf,.png,.jpg,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
@@ -916,13 +916,13 @@ e
 \openout5 = `Exposé.toc'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Expo
@@ -931,132 +931,162 @@ sé.lof)
 \openout6 = `Exposé.lof'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
  [2] (./Exposé.lot)
 \tf@lot=\write7
 \openout7 = `Exposé.lot'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 83.
+(babel)             in language append on input line 85.
  [3]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 85.
+(babel)             in language append on input line 87.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 85.
+(babel)             in language append on input line 87.
 
-Overfull \hbox (26.29803pt too wide) in paragraph at lines 88--89
+Overfull \hbox (23.36473pt too wide) in paragraph at lines 90--91
 \OT1/cmr/m/n/12 gungs-wege be-treibt, die []uber ei-ne Ver-mitt-lungs-stel-le m
-it-ein-an-der ver-bun-den sein m[]ussen."(Aus:
+it-ein-an-der ver-bun-den sein m[]ussen."(aus:
  []
 
 
-Overfull \hbox (120.89691pt too wide) in paragraph at lines 88--89
-\OT1/cmr/m/n/12 IT-Wis-sen (2013): NB (Netz-be-trei-ber) - Car-ri-er, URL: http
-://www.itwissen.info/definition/lexikon/Netzbetreiber-
+Overfull \hbox (170.89891pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/12 [[]4[]]) (Aus: IT-Wis-sen (2013): NB (Netz-be-trei-ber) - Car-r
+i-er, URL: http://www.itwissen.info/definition/lexikon/Netzbetreiber-
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 93.
+(babel)             in language append on input line 95.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 93.
+(babel)             in language append on input line 95.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 100.
+(babel)             in language append on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 100.
+(babel)             in language append on input line 102.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 107.
+(babel)             in language append on input line 109.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 107.
+(babel)             in language append on input line 109.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 107.
+(babel)             in language append on input line 109.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 107.
+(babel)             in language append on input line 109.
 [4]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 109.
+(babel)             in language append on input line 112.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 109.
+(babel)             in language append on input line 112.
+ <../images/statista.png, id=77, 770.88pt x 471.7625pt>
+File: ../images/statista.png Graphic file (type png)
+
+<use ../images/statista.png>
+Package pdftex.def Info: ../images/statista.png used on input line 117.
+(pdftex.def)             Requested size: 364.19667pt x 222.88016pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 119.
+(babel)             in language append on input line 126.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 119.
+(babel)             in language append on input line 126.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 123.
+(babel)             in language append on input line 126.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 123.
+(babel)             in language append on input line 126.
+ [5 <../images/statista.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 123.
+(babel)             in language append on input line 128.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 123.
- [5]
+(babel)             in language append on input line 128.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 143.
+(babel)             in language append on input line 146.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 143.
+(babel)             in language append on input line 146.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 143.
+(babel)             in language append on input line 146.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 143.
+(babel)             in language append on input line 146.
  [6]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 151.
+(babel)             in language append on input line 160.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 151.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 157.
+(babel)             in language append on input line 160.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
 
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 157.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 164.
+(babel)             in language append on input line 173.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 164.
+(babel)             in language append on input line 173.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 215.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 215.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 209.
+(babel)             in language append on input line 215.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 209.
+(babel)             in language append on input line 215.
+ [7]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 240.
+(babel)             in language append on input line 216.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 240.
+(babel)             in language append on input line 216.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 240.
+(babel)             in language append on input line 218.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 240.
+(babel)             in language append on input line 218.
 
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
+
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 246.
+
+
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 246.
+
+
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 246.
+
+
+Overfull \hbox (22.13907pt too wide) in paragraph at lines 247--247
+[]\OT1/cmr/m/n/12 ITWissen. \OT1/cmr/m/it/12 NB (Netz-be-trei-ber) - Car-ri-er\
+OT1/cmr/m/n/12 . \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : []$\OT1/cmtt/m/n/12 http
+ : / / www . itwissen . info / definition /
+ []
+
+
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 246.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 242.
+(babel)             in language append on input line 248.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 242.
+(babel)             in language append on input line 248.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 242.
+(babel)             in language append on input line 248.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 242.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+(babel)             in language append on input line 248.
+[8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
  (./Exposé.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
 Package rerunfilecheck Info: File `Exposé.out' has not changed.
 (rerunfilecheck)             Checksum: 188656CB9341437EABF278FAA3E665FC;596.
 Package logreq Info: Writing requests to 'Exposé.run.xml'.
@@ -1064,21 +1094,23 @@ Package logreq Info: Writing requests to 'Exposé.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13027 strings out of 493089
- 207870 string characters out of 6134843
- 688721 words of memory out of 5000000
- 16311 multiletter control sequences out of 15000+600000
- 8915 words of font info for 32 fonts, out of 8000000 for 9000
+ 12969 strings out of 493089
+ 206921 string characters out of 6134843
+ 684478 words of memory out of 5000000
+ 16250 multiletter control sequences out of 15000+600000
+ 9385 words of font info for 34 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 36i,9n,48p,1166b,1465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,48p,1166b,1461s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Exposé.pdf (8 pages, 70649 bytes).
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Exposé.pdf (8 pages, 105282 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,24 +15,26 @@
 \usepackage{amsmath}
 %\numberwithin{equation}{section}
 
-%Bibliographical Stuff:
-%Use \textcite{} and \parencite{} with biblatex!
+% ### Bibliographical Stuff ###
+% Use \textcite{} and \parencite{} with biblatex!
 \usepackage[backend=biber,
-    style=authoryear-icomp,
+    style=numeric-comp,%alphabetic-verb,
     sortlocale=de_DE,
     natbib=true,
-    url=false, 
+    url=true, 
     doi=true,
     eprint=false]{biblatex}%NC: replaced bibtex by biber
-%removed options: ,sortcites=false,citestyle=authortitle
 \addbibresource{literatur.bib}%Dateiname für Quellen einfügen
 \usepackage{ragged2e} %für bessere URL formatierung bei printbibliography 
 
 %Bilder einbinden und auf der gleichen seite ein
 %Fußnotenzitat einzufügen
+%https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics
 \usepackage{graphicx}
-\usepackage{float}
-\usepackage{afterpage}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg} %order of preference
+\graphicspath{ {../images/} } %NC: Additional path to look for images in (placed higher up to support one location for multiple documents)
+%\usepackage{float} %NC: Causes problems. deactivate this and the next
+%\usepackage{afterpage} %need to use with: \af­ter­page{\clearpage} https://www.ctan.org/pkg/afterpage?lang=de
 
 \interfootnotelinepenalty=99999 %Seitenumbruch einer Fußzeile verhindern
 
@@ -85,7 +87,7 @@
 \section{Stand der Forschung}
 Gegenstand der Projektarbeit bildet ein hinsichtlich der Energieeffizienz und Wirtschaftlichkeit zu optimierendes Carrier-Netzwerk.
 
-Unter einem Carrier "versteht man […] eine Gesellschaft, die mindestens drei Übertra\-gungs\-wege betreibt, die über eine Vermittlungsstelle miteinander verbunden sein müssen." (Aus: ITWissen (2013): NB (Netzbetreiber) - Carrier, URL: http://www.itwissen.info/definition/lexikon/Netzbetreiber-carrier-NB.html, zuletzt eingesehen am 01.04.2016.) Ein Carrier-Netzwerk stellt somit physikalische Transportwege und -verfahren zur Verfügung und bildet die Grundlage für sogenannte Value Added Services von Providern, welche auf den Carrier-Diensten aufsetzen (Vgl. Konrad Faßnacht, Siemens Business Services (1997): Der deutsche Telekommunikationsmarkt, URL: https://www.rz.uni-augsburg.de/info/connect/1997-02/telemarkt/ (zuletzt eingesehen am 01.04.2016). "Bei den TK-Transportwegen unterscheidet man leitergebundene Verbindungen auf der Basis von Kupferkabeln oder Lichtwellenleitern sowie Funkverbindungen wie Satellitenverbindungen, Richtfunkstrecken und Rundfunkverbindungen." (Aus: Ebd.)\cite{NICK2016}
+Unter einem Carrier "versteht man […] eine Gesellschaft, die mindestens drei Übertra\-gungs\-wege betreibt, die über eine Vermittlungsstelle miteinander verbunden sein müssen." (aus: \cite{carrier}) Ein Carrier-Netzwerk stellt somit physikalische Transportwege und -verfahren zur Verfügung und bildet die Grundlage für sogenannte Value Added Services von Providern, welche auf den Carrier-Diensten aufsetzen \cite{fassnacht}. "Bei den TK-Transportwegen unterscheidet man leitergebundene Verbindungen auf der Basis von Kupferkabeln oder Lichtwellenleitern sowie Funkverbindungen wie Satellitenverbindungen, Richtfunkstrecken und Rundfunkverbindungen." (Aus: Ebd.)
 
 Somit umfasst ein Carrier-Netzwerk nicht nur das physikalische Backbone-Netz, sondern auch das Zugangs- und Aggregationsnetzwerk. Im Rahmen des Projektes entfällt die Betrachtung der Optimierungspotentiale des Zugangsnetzes zugunsten einer aus\-führ\-lich\-eren Simulation von wirtschaftlichen und energieeffizienten Netzkonzepten im Backbone- und Aggregationsnetzwerk. So bildet der Broadband Network Gateway (BNG) die niedrigste Netzelementebene. Multi-Service Access Nodes (MSAN), Digital Subscriber Line Access Multiplexer (DSLAM), enhanced NodeBs (eNodeB) und weitere Netzelemente der nächsttieferen Hierarchiestufe fallen somit aus der Betrachtung.
 
@@ -106,12 +108,19 @@ Bei den Technologieren beschränkt sich diese Arbeit auf Optische Leitungsvermit
 Optische Leitungsvermittelnde Switche basieren auf Mikro-elektromechanischen Systemen, die die geringste Menge an Energie benötigen und eine hohe Portanzahl besitzen. Das Hybrid Optical Switching verwendet eine Kombination aus optischen und elektronischen Netzknoten, die optische Leitungen, Bursts, und Pakete effizient Switches können. Durch die Kombination von langsamen und schnellen Switches, können Wellenlängenbereiche dynamischen zwischen zwei Switches geändert werden. Das temporäre Abschalten von ungenutzten Ports des schnellen Switches ermöglicht eine Energieeinsparung. 
 
 %\newpage
+
 \section{Problemstellung und Motivation}
-Nach einer Schätzung des ICT-Analysehauses Gartner erzeugte die Informations- und Kommunikationstechnologie im Jahr 2007 rund 2\% des globalen Ausstoßes an CO2, was dem Ausstoß der Flugzeugbranche entspricht [1]. Seit dem ist der Anteil der Bevölkerung weltweit, der das Internet verwendet, von 20,6\% (2007) auf 43,4\% (2015) gestiegen [3]. Dieses Wachstum wird sich in der nächsten Zukunft nicht verlangsamen. Es ist also unabdingbar, den CO2-Ausstoß, der durch ICT im Allgemeinen verursacht wird, drastisch zu verringern.
+Nach einer Schätzung des ICT-Analysehauses Gartner erzeugte die Informations- und Kommunikationstechnologie im Jahr 2007 rund 2\% des globalen Ausstoßes an CO2, was dem Ausstoß der Flugzeugbranche entspricht \cite{gartner}. Seit dem ist der Anteil der Bevölkerung weltweit, der das Internet verwendet, von 20,6\% (2007) auf 43,4\% (2015) gestiegen \citep{itu}. Dieses Wachstum wird sich in der nächsten Zukunft nicht verlangsamen. Es ist also unabdingbar, den CO2-Ausstoß, der durch ICT im Allgemeinen verursacht wird, drastisch zu verringern.
 
-GRAPHIK
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{statista}
+    \caption{Awesome Image}
+    \label{fig:awesome_image}
+\end{figure}
+%\afterpage{\clearpage}
 
-Da aller Bemühungen zum Trotz die fossilen Energieträger Erdöl, Kohle und Erdgas weiterhin ca. 81\% der weltweiten Energieerzeugung ausmachen[4], ist die Reduktion des Energieverbrauchs von ICT-Infrastruktur ein wichtiger Ansatz, um den CO2-Ausstoß zu verringern. Natürlich sind neben dem Bemühen, ICT grüner zu gestalten, wirtschaftliche Bedenken ein weiterer wichtiger Treiber für das Streben nach mehr Energieeffizienz. Langfristig steigende Energiekosten ([5], S. 40f) sind ein großes Risiko für ICT-Provider weltweit, die insgesamt mit steigenden Kosten zu kämpfen haben.
+Da aller Bemühungen zum Trotz die fossilen Energieträger Erdöl, Kohle und Erdgas weiterhin ca. 81\% der weltweiten Energieerzeugung ausmachen \cite{statista}, ist die Reduktion des Energieverbrauchs von ICT-Infrastruktur ein wichtiger Ansatz, um den CO2-Ausstoß zu verringern. Natürlich sind neben dem Bemühen, ICT grüner zu gestalten, wirtschaftliche Bedenken ein weiterer wichtiger Treiber für das Streben nach mehr Energieeffizienz. Langfristig steigende Energiekosten (\cite{iea2015} S. 40f) sind ein großes Risiko für ICT-Provider weltweit, die insgesamt mit steigenden Kosten zu kämpfen haben.
  
 Die vorliegende Arbeit beschränkt sich auf die ökonomischen Zwänge, die sich aus ineffizienten Netzen ergeben. Es soll eine Software entwickelt werden, die es ermöglicht, zwei hypothetische Netze miteinander zu vergleichen, zum einen ein konventionelles Netz, wie es heutzutage Stand der Technik ist, zum anderen ein energieeffizientes Netz, das die vorhandenen Technologien und Konzepte zur Effizienzsteigerung sinnvoll verbindet. Anhand des berechneten Energieverbrauchs der beiden Netze wird das Energiesparpotenzial sowie die möglichen Kosteneinsparungen durch den Betrieb des energieeffizienten Netzes ausgegeben.
 
@@ -209,7 +218,6 @@ Phase 5: Präsentation
  \subsection{Meilensteine}
 Meilensteine:
  
-M1 Teletutoring 1	KW 14
 M2 Teletutoring 2	KW 16
 M3 Präsenzphase	KW 17
 M4 Teletutoring 3	KW18
@@ -227,17 +235,14 @@ M11 Präsentation	KW28
     %\begin{tabularx}{\textwidth}{| X | X | X |}
     \begin{tabularx}{\textwidth}{bss}
         \hline
-        Alpha     & Beta     & Gamma     \\ \hline
-        0         & 2        & 4         \\ \hline
+        Name     & Beschreibung     & Datum     \\ \hline
+        M1         & Teletutoring 1        & KW 14         \\ \hline
         1         & 3        & 5         \\ \hline
     \end{tabularx}
 \end{table}
 
 
 
-
-
 \printbibliography 
 
 \end{document}
-
