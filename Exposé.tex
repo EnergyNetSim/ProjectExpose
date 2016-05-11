@@ -2,6 +2,8 @@
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 
+\usepackage{csquotes}%NC: needed for babel
+
 \usepackage[a4paper , lmargin = {2.5cm} , rmargin = {2.5cm} , tmargin =
 {2cm} , bmargin = {2cm}]{geometry}
 
@@ -13,9 +15,18 @@
 \usepackage{amsmath}
 %\numberwithin{equation}{section}
 
-\usepackage[backend=bibtex,sortcites=false,citestyle=authortitle]{biblatex}
-\bibliography{Quellen.bib}%Dateiname für Quellen einfügen
-\usepackage{ragged2e} %für bessere URL formatierung bei printbibliography
+%Bibliographical Stuff:
+%Use \textcite{} and \parencite{} with biblatex!
+\usepackage[backend=biber,
+    style=authoryear-icomp,
+    sortlocale=de_DE,
+    natbib=true,
+    url=false, 
+    doi=true,
+    eprint=false]{biblatex}%NC: replaced bibtex by biber
+%removed options: ,sortcites=false,citestyle=authortitle
+\addbibresource{literatur.bib}%Dateiname für Quellen einfügen
+\usepackage{ragged2e} %für bessere URL formatierung bei printbibliography 
 
 %Bilder einbinden und auf der gleichen seite ein
 %Fußnotenzitat einzufügen
@@ -26,6 +37,10 @@
 \interfootnotelinepenalty=99999 %Seitenumbruch einer Fußzeile verhindern
 
 \usepackage{moreverb} %tabulator formatierung in verbatim umgebung
+
+%Tables:
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.5\hsize}X}
 
 \newcommand{\bildcite}[6]{
      \begin{figure}[H]
@@ -66,13 +81,13 @@
 
 \begin{document}
 \firstpages
-\twocolumn
+%\twocolumn
 \section{Stand der Forschung}
 Gegenstand der Projektarbeit bildet ein hinsichtlich der Energieeffizienz und Wirtschaftlichkeit zu optimierendes Carrier-Netzwerk.
 
-Unter einem Carrier "versteht man […] eine Gesellschaft, die mindestens drei Übertragungswege betreibt, die über eine Vermittlungsstelle miteinander verbunden sein müssen." (Aus: ITWissen (2013): NB (Netzbetreiber) - Carrier, URL: http://www.itwissen.info/definition/lexikon/Netzbetreiber-carrier-NB.html, zuletzt eingesehen am 01.04.2016.) Ein Carrier-Netzwerk stellt somit physikalische Transportwege und -verfahren zur Verfügung und bildet die Grundlage für sogenannte Value Added Services von Providern, welche auf den Carrier-Diensten aufsetzen (Vgl. Konrad Faßnacht, Siemens Business Services (1997): Der deutsche Telekommunikationsmarkt, URL: https://www.rz.uni-augsburg.de/info/connect/1997-02/telemarkt/ (zuletzt eingesehen am 01.04.2016). "Bei den TK-Transportwegen unterscheidet man leitergebundene Verbindungen auf der Basis von Kupferkabeln oder Lichtwellenleitern sowie Funkverbindungen wie Satellitenverbindungen, Richtfunkstrecken und Rundfunkverbindungen." (Aus: Ebd.)
+Unter einem Carrier "versteht man […] eine Gesellschaft, die mindestens drei Übertra\-gungs\-wege betreibt, die über eine Vermittlungsstelle miteinander verbunden sein müssen." (Aus: ITWissen (2013): NB (Netzbetreiber) - Carrier, URL: http://www.itwissen.info/definition/lexikon/Netzbetreiber-carrier-NB.html, zuletzt eingesehen am 01.04.2016.) Ein Carrier-Netzwerk stellt somit physikalische Transportwege und -verfahren zur Verfügung und bildet die Grundlage für sogenannte Value Added Services von Providern, welche auf den Carrier-Diensten aufsetzen (Vgl. Konrad Faßnacht, Siemens Business Services (1997): Der deutsche Telekommunikationsmarkt, URL: https://www.rz.uni-augsburg.de/info/connect/1997-02/telemarkt/ (zuletzt eingesehen am 01.04.2016). "Bei den TK-Transportwegen unterscheidet man leitergebundene Verbindungen auf der Basis von Kupferkabeln oder Lichtwellenleitern sowie Funkverbindungen wie Satellitenverbindungen, Richtfunkstrecken und Rundfunkverbindungen." (Aus: Ebd.)\cite{NICK2016}
 
-Somit umfasst ein Carrier-Netzwerk nicht nur das physikalische Backbone-Netz, sondern auch das Zugangs- und Aggregationsnetzwerk. Im Rahmen des Projektes entfällt die Betrachtung der Optimierungspotentiale des Zugangsnetzes zugunsten einer ausführlicheren Simulation von wirtschaftlichen und energieeffizienten Netzkonzepten im Backbone- und Aggregationsnetzwerk. So bildet der Broadband Network Gateway (BNG) die niedrigste Netzelementebene. Multi-Service Access Nodes (MSAN), Digital Subscriber Line Access Multiplexer (DSLAM), enhanced NodeBs (eNodeB) und weitere Netzelemente der nächsttieferen Hierarchiestufe fallen somit aus der Betrachtung.
+Somit umfasst ein Carrier-Netzwerk nicht nur das physikalische Backbone-Netz, sondern auch das Zugangs- und Aggregationsnetzwerk. Im Rahmen des Projektes entfällt die Betrachtung der Optimierungspotentiale des Zugangsnetzes zugunsten einer aus\-führ\-lich\-eren Simulation von wirtschaftlichen und energieeffizienten Netzkonzepten im Backbone- und Aggregationsnetzwerk. So bildet der Broadband Network Gateway (BNG) die niedrigste Netzelementebene. Multi-Service Access Nodes (MSAN), Digital Subscriber Line Access Multiplexer (DSLAM), enhanced NodeBs (eNodeB) und weitere Netzelemente der nächsttieferen Hierarchiestufe fallen somit aus der Betrachtung.
 
 
 \subsection{Energieverbrauch in Netzwerken}
@@ -106,7 +121,7 @@ Zur Durchführung einer Kalkulation des Energiesparpotentials und möglicher Kos
  
 Zunächst sollen im Rahmen der Literaturrecherche Methoden für die Reduzierung des Energieverbrauchs und die Erhöhung der Energieeffizienz in Kommunikationsnetzen herausgefunden werden. In einem weiteren Schritt gilt es alle gefundenen Technologien zu konsolidieren, das Netz zu spezifizieren und verschiedene Szenarien, die anschließend verglichen werden sollen, zu definieren. 
  
-Bei der Spezifikation des Netzes liegt ein Hauptaugenmerk auf der Eingrenzung des für diese Arbeit relevanten Scopes. Zu klärende Fragen sind in diesem Zusammenhang, ob nur das Kernnetz oder auch das Zugangsnetz betrachtet werden soll, bzw. Welche Generationen der Netze zu untersuchen sind. 
+Bei der Spezifikation des Netzes liegt ein Hauptaugenmerk auf der Eingrenzung des für diese Arbeit relevanten Scopes. Zu klärende Fragen sind in diesem Zusammenhang, ob nur das Kernnetz oder auch das Zugangsnetz betrachtet werden soll bzw. welche Generationen der Netze zu untersuchen sind. 
  
 Zur Vorbereitung der Entwicklung der Simulationssoftware müssen darauf folgend Szenarien (zum einen ein Business-As-Usual- und ein energieeffizientes Netz) modelliert werden. Wichtig ist dabei zu klären, aus wie vielen und welchen Netzkomponenten das jeweilige Netz besteht, welche Nutzungsprofile für die Simulation verwendet werden und welche Konfigurationsmöglichkeiten der Anwender der Simulationssoftware haben soll. 
  
@@ -118,9 +133,9 @@ Die Softwarelösung wird als objektorientierte Java Desktop Anwendung mit einer 
  
 Der Bereich Model beinhaltet das Einlesen so wie auch die Manipulation von Netzlast-Werten, Hardwarekonfigurationen und sonstigen für die Berechnung notwendigen Daten aus einer von uns im Rahmen dieses Projektes entwickelten MySQL / MariaDB Datenbank. Die in der Simulation errechneten Ergebnismengen werden in diesem Bereich gespeichert und auch die finale Datenbewertung ("Geschäftslogik") wird hier implementiert.
  
-Der Bereich View beinhaltet die Anwendungsformulare zur Bearbeitung der Netzhardware- und Verbindungs- Konfiguration, zur Auswahl von Konfigurationsparametern für die Simulation und zum Anzeigen der berechneten Ergebnisse. Das Ergebnis der Simulation wird in Form von Tabellen (z.B. Iterationsnummer| Netzlast | elektr. Stromverbrauch | \% von Maximalverbrauch) und mehrerer Diagramme (jfreechart) im Anwendungsfenster angezeigt. Die Diagrammerstellungs- und Anzeigefunktionen werden auch in diesem Bereich abgelegt.
+Der Bereich View beinhaltet die Anwendungsformulare zur Bearbeitung der Netz\-hard\-ware- und Verbindungs-Kon\-figura\-tion, zur Auswahl von Konfigurationsparametern für die Simulation und zum Anzeigen der berechneten Ergebnisse. Das Ergebnis der Simulation wird in Form von Tabellen (z.B. Iterationsnummer| Netzlast | elektr. Stromverbrauch | \% von Maximalverbrauch) und mehrerer Diagramme (jfreechart) im Anwendungsfenster angezeigt. Die Diagrammerstellungs- und Anzeigefunktionen werden auch in diesem Bereich abgelegt.
  
-Der Bereich Controller beinhaltet die Anwendungslogik, die Implementierung des Portabschaltungsalgorithmus "Exhaustive Greedy Algorithm" (bei Erfüllung der Netzlast-Anforderungen, Einhaltung eines vom Anwender der Simulationssoftware festgelegten maximalen Hop-Counts und die verschachtelten Schleifen zum durchprobieren der Lösungsmöglichkeiten (Netzlast-Routing und Energiespar-/Ab-schaltung von Netzwerkstrecken) mit dem Ziel der Findung des besten Ergebnisses (früher Abbruch einer Schleifeniteration, wenn die Vorgaben nicht mehr eingehalten werden oder der Gesamtstromverbrauch einer Lösung einer früheren Iteration überschritten wurde). Um ein Ergebnis im Zeitlichen Verlauf abhängig von den konfigurierten Netzlast-Daten zu erzielen wird iterativ je zeitlichem Abschnitt die Lösungsberechnung durchgeführt und in Ergebnistabellen eingetragen.
+Der Bereich Controller beinhaltet die Anwendungslogik, die Implementierung des Portabschaltungsalgorithmus "Exhaustive Greedy Algorithm" (bei Erfüllung der Netzlast-Anforderungen, Einhaltung eines vom Anwender der Simulationssoftware festgelegten maximalen Hop-Counts und die verschachtelten Schleifen zum durchprobieren der Lösungs\-möglich\-keiten (Netzlast-Routing und Energiespar-/Ab-schaltung von Netzwerkstrecken) mit dem Ziel der Findung des besten Ergebnisses (früher Abbruch einer Schleifeniteration, wenn die Vorgaben nicht mehr eingehalten werden oder der Gesamtstromverbrauch einer Lösung einer früheren Iteration überschritten wurde). Um ein Ergebnis im Zeitlichen Verlauf abhängig von den konfigurierten Netzlast-Daten zu erzielen wird iterativ je zeitlichem Abschnitt die Lösungsberechnung durchgeführt und in Ergebnistabellen eingetragen.
  
 Allgemein findet nur eine sehr rudimentäre Validation der Benutzereingaben statt. Beispielsweise liegt es in Verantwortung des Anwenders, keine für das konfigurierte Netz zu große Netzspitzenlast zu konfigurieren. (Out of Scope) In einer späteren Weiterentwicklung könnte eine komplexe Plausibilitätsprüfung implementiert werden.
  
@@ -134,8 +149,19 @@ Zum Schluss müssen eine Dokumentation über das entwickelte Simulationstool ges
 
 
 \section{Projektmanagement und Zeitplan}
+Das Projektmanagement
 
-
+ 
+ 
+Projektmanagement:
+•	Ständige Dokumentation der Aktivitäten
+•	Kooperation, Kommunikation, Koordinierung im Team
+•	Fortschrittskontrolle
+•	Qualitätskontrolle, Risikoüberwachung, Quality Gates
+ 
+ 
+ 
+\subsection{Arbeitspakete}
 Phase 0: Vorbereitung
 •	Analyse der Aufgabenstellung
 •	Projektplanung / -vorbereitung
@@ -165,14 +191,7 @@ Phase 5: Präsentation
 •	Folien erstellen
 •	Präsentation halten
  
- 
- 
-Projektmanagement:
-•	Ständige Dokumentation der Aktivitäten
-•	Kooperation, Kommunikation, Koordinierung im Team
-•	Fortschrittskontrolle
-•	Qualitätskontrolle, Risikoüberwachung, Quality Gates
- 
+
  
  
 1. Analyse der Aufgabenstellung
@@ -185,6 +204,9 @@ Projektmanagement:
 8. Anfertigen der Präsentation
 9. Anfertigen der Projektdokumentation
  
+\subsection{Ablauf- und Terminplanung}
+
+ \subsection{Meilensteine}
 Meilensteine:
  
 M1 Teletutoring 1	KW 14
@@ -200,13 +222,22 @@ M10 Abgabe Projektbericht	TBA (KW27)
 M11 Abgabe Präsentation/Code	TBA (KW28)
 M11 Präsentation	KW28
  
- 
+ \begin{table}[htbp]
+    \centering
+    %\begin{tabularx}{\textwidth}{| X | X | X |}
+    \begin{tabularx}{\textwidth}{bss}
+        \hline
+        Alpha     & Beta     & Gamma     \\ \hline
+        0         & 2        & 4         \\ \hline
+        1         & 3        & 5         \\ \hline
+    \end{tabularx}
+\end{table}
 
 
 
 
 
-
+\printbibliography 
 
 \end{document}
 

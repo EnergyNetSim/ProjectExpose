@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.6)  10 MAY 2016 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.6)  11 MAY 2016 08:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -258,13 +258,37 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2015/04/15 v5.1e context-sensitive quotations (JAW)
 
+(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count88
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
+\csq@reset=\count89
+\csq@gtype=\count90
+\csq@glevel=\count91
+\csq@qlevel=\count92
+\csq@maxlvl=\count93
+\csq@tshold=\count94
+\csq@ltx@everypar=\toks17
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2015/04/15 v5.1e csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
@@ -276,9 +300,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
+\Gm@cnth=\count95
+\Gm@cntv=\count96
+\c@Gm@tempcnt=\count97
 \Gm@bindingoffset=\dimen104
 \Gm@wd@mp=\dimen105
 \Gm@odd@mp=\dimen106
@@ -287,7 +311,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen109
 \Gm@layouthoffset=\dimen110
 \Gm@layoutvoffset=\dimen111
-\Gm@dimlist=\toks17
+\Gm@dimlist=\toks18
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
@@ -334,7 +358,6 @@ Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
 Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
@@ -346,15 +369,15 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen112
-\Hy@linkcounter=\count91
-\Hy@pagecounter=\count92
+\Hy@linkcounter=\count98
+\Hy@pagecounter=\count99
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count93
+\Hy@SavedSpaceFactor=\count100
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -367,10 +390,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count94
+\c@Hy@tempcnt=\count101
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen113
-\Fld@menulength=\count95
+\Fld@menulength=\count102
 \Field@Width=\dimen114
 \Fld@charsize=\dimen115
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -382,17 +405,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count96
-\c@Item=\count97
-\c@Hfootnote=\count98
+\Hy@abspage=\count103
+\c@Item=\count104
+\c@Hfootnote=\count105
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count99
-\c@bookmark@seq@number=\count100
+\Fld@listcount=\count106
+\c@bookmark@seq@number=\count107
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -408,7 +431,7 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen116
 \extrarowheight=\dimen117
-\NC@list=\toks18
+\NC@list=\toks19
 \extratabsurround=\skip44
 \backup@length=\skip45
 )
@@ -417,8 +440,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@old@col=\dimen120
 \TX@target=\dimen121
 \TX@delta=\dimen122
-\TX@cols=\count101
-\TX@ftn=\toks19
+\TX@cols=\count108
+\TX@ftn=\toks20
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
@@ -430,7 +453,7 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks20
+\@emptytoks=\toks21
 \ex@=\dimen123
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -440,13 +463,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count102
+\inf@bad=\count109
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count103
-\leftroot@=\count104
+\uproot@=\count110
+\leftroot@=\count111
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count105
-\DOTSCASE@=\count106
+\classnum@=\count112
+\DOTSCASE@=\count113
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -455,43 +478,39 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen125
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count107
-\c@MaxMatrixCols=\count108
+\macc@depth=\count114
+\c@MaxMatrixCols=\count115
 \dotsspace@=\muskip11
-\c@parentequation=\count109
-\dspbrk@lvl=\count110
-\tag@help=\toks21
-\row@=\count111
-\column@=\count112
-\maxfields@=\count113
-\andhelp@=\toks22
+\c@parentequation=\count116
+\dspbrk@lvl=\count117
+\tag@help=\toks22
+\row@=\count118
+\column@=\count119
+\maxfields@=\count120
+\andhelp@=\toks23
 \eqnshift@=\dimen126
 \alignsep@=\dimen127
 \tagshift@=\dimen128
 \tagwidth@=\dimen129
 \totwidth@=\dimen130
 \lineht@=\dimen131
-\@envbody=\toks23
+\@envbody=\toks24
 \multlinegap=\skip47
 \multlinetaggap=\skip48
-\mathdisplay@stack=\toks24
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2015/04/19 v3.0 programmable bibliographies (PK/JW/AB)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex1.sty
-Package: biblatex1 2015/04/19 v3.0 programmable bibliographies (bibtex) (PK/JW/
-AB)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex2.sty
+Package: biblatex2 2015/04/19 v3.0 programmable bibliographies (biber) (PK/JW/A
+B)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count114
-)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count115
+\lrq@indent=\count121
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -499,121 +518,137 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count116
-\c@listtotal=\count117
-\c@listcount=\count118
-\c@liststart=\count119
-\c@liststop=\count120
-\c@citecount=\count121
-\c@citetotal=\count122
-\c@multicitecount=\count123
-\c@multicitetotal=\count124
-\c@instcount=\count125
-\c@maxnames=\count126
-\c@minnames=\count127
-\c@maxitems=\count128
-\c@minitems=\count129
-\c@citecounter=\count130
-\c@savedcitecounter=\count131
-\c@uniquelist=\count132
-\c@uniquename=\count133
-\c@refsection=\count134
-\c@refsegment=\count135
-\c@maxextrayear=\count136
-\c@maxextraalpha=\count137
-\c@abbrvpenalty=\count138
-\c@highnamepenalty=\count139
-\c@lownamepenalty=\count140
-\c@maxparens=\count141
-\c@parenlevel=\count142
-\blx@tempcnta=\count143
-\blx@tempcntb=\count144
-\blx@tempcntc=\count145
-\blx@maxsection=\count146
-\blx@maxsegment=\count147
-\blx@notetype=\count148
-\blx@parenlevel@text=\count149
-\blx@parenlevel@foot=\count150
+\c@tabx@nest=\count122
+\c@listtotal=\count123
+\c@listcount=\count124
+\c@liststart=\count125
+\c@liststop=\count126
+\c@citecount=\count127
+\c@citetotal=\count128
+\c@multicitecount=\count129
+\c@multicitetotal=\count130
+\c@instcount=\count131
+\c@maxnames=\count132
+\c@minnames=\count133
+\c@maxitems=\count134
+\c@minitems=\count135
+\c@citecounter=\count136
+\c@savedcitecounter=\count137
+\c@uniquelist=\count138
+\c@uniquename=\count139
+\c@refsection=\count140
+\c@refsegment=\count141
+\c@maxextratitle=\count142
+\c@maxextratitleyear=\count143
+\c@maxextrayear=\count144
+\c@maxextraalpha=\count145
+\c@abbrvpenalty=\count146
+\c@highnamepenalty=\count147
+\c@lownamepenalty=\count148
+\c@maxparens=\count149
+\c@parenlevel=\count150
+\blx@tempcnta=\count151
+\blx@tempcntb=\count152
+\blx@tempcntc=\count153
+\blx@maxsection=\count154
+\blx@maxsegment@0=\count155
+\blx@notetype=\count156
+\blx@parenlevel@text=\count157
+\blx@parenlevel@foot=\count158
+\blx@sectionciteorder@0=\count159
 \labelnumberwidth=\skip49
 \labelalphawidth=\skip50
-\shorthandwidth=\skip51
-\biblabelsep=\skip52
-\bibitemsep=\skip53
-\bibnamesep=\skip54
-\bibinitsep=\skip55
-\bibparsep=\skip56
-\bibhang=\skip57
-\blx@auxin=\read1
-\blx@auxout=\write3
-\c@mincomprange=\count151
-\c@maxcomprange=\count152
-\c@mincompwidth=\count153
-\c@labelname=\count154
-\c@savedlabelname=\count155
-\c@author=\count156
-\c@savedauthor=\count157
-\c@shortauthor=\count158
-\c@savedshortauthor=\count159
-\c@editor=\count160
-\c@savededitor=\count161
-\c@editora=\count162
-\c@savededitora=\count163
-\c@editorb=\count164
-\c@savededitorb=\count165
-\c@editorc=\count166
-\c@savededitorc=\count167
-\c@shorteditor=\count168
-\c@savedshorteditor=\count169
-\c@bookauthor=\count170
-\c@savedbookauthor=\count171
-\c@translator=\count172
-\c@savedtranslator=\count173
-\c@annotator=\count174
-\c@savedannotator=\count175
-\c@commentator=\count176
-\c@savedcommentator=\count177
-\c@introduction=\count178
-\c@savedintroduction=\count179
-\c@foreword=\count180
-\c@savedforeword=\count181
-\c@afterword=\count182
-\c@savedafterword=\count183
-\c@holder=\count184
-\c@savedholder=\count185
-\c@namea=\count186
-\c@savednamea=\count187
-\c@nameb=\count188
-\c@savednameb=\count189
-\c@namec=\count190
-\c@savednamec=\count191
-\c@institution=\count192
-\c@savedinstitution=\count193
-\c@language=\count194
-\c@savedlanguage=\count195
-\c@location=\count196
-\c@savedlocation=\count197
-\c@organization=\count198
-\c@savedorganization=\count199
-\c@origlocation=\count200
-\c@savedoriglocation=\count201
-\c@origpublisher=\count202
-\c@savedorigpublisher=\count203
-\c@pageref=\count204
-\c@savedpageref=\count205
-\c@publisher=\count206
-\c@savedpublisher=\count207
-\c@lista=\count208
-\c@savedlista=\count209
-\c@listb=\count210
-\c@savedlistb=\count211
-\c@listc=\count212
-\c@savedlistc=\count213
-\c@listd=\count214
-\c@savedlistd=\count215
-\c@liste=\count216
-\c@savedliste=\count217
-\c@listf=\count218
-\c@savedlistf=\count219
+\biblabelsep=\skip51
+\bibitemsep=\skip52
+\bibnamesep=\skip53
+\bibinitsep=\skip54
+\bibparsep=\skip55
+\bibhang=\skip56
+\blx@bcfin=\read1
+\blx@bcfout=\write3
+\c@mincomprange=\count160
+\c@maxcomprange=\count161
+\c@mincompwidth=\count162
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear-icomp.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count163
+\c@savedafterword=\count164
+\c@annotator=\count165
+\c@savedannotator=\count166
+\c@author=\count167
+\c@savedauthor=\count168
+\c@bookauthor=\count169
+\c@savedbookauthor=\count170
+\c@commentator=\count171
+\c@savedcommentator=\count172
+\c@editor=\count173
+\c@savededitor=\count174
+\c@editora=\count175
+\c@savededitora=\count176
+\c@editorb=\count177
+\c@savededitorb=\count178
+\c@editorc=\count179
+\c@savededitorc=\count180
+\c@foreword=\count181
+\c@savedforeword=\count182
+\c@holder=\count183
+\c@savedholder=\count184
+\c@introduction=\count185
+\c@savedintroduction=\count186
+\c@namea=\count187
+\c@savednamea=\count188
+\c@nameb=\count189
+\c@savednameb=\count190
+\c@namec=\count191
+\c@savednamec=\count192
+\c@translator=\count193
+\c@savedtranslator=\count194
+\c@shortauthor=\count195
+\c@savedshortauthor=\count196
+\c@shorteditor=\count197
+\c@savedshorteditor=\count198
+\c@labelname=\count199
+\c@savedlabelname=\count200
+\c@institution=\count201
+\c@savedinstitution=\count202
+\c@lista=\count203
+\c@savedlista=\count204
+\c@listb=\count205
+\c@savedlistb=\count206
+\c@listc=\count207
+\c@savedlistc=\count208
+\c@listd=\count209
+\c@savedlistd=\count210
+\c@liste=\count211
+\c@savedliste=\count212
+\c@listf=\count213
+\c@savedlistf=\count214
+\c@location=\count215
+\c@savedlocation=\count216
+\c@organization=\count217
+\c@savedorganization=\count218
+\c@origlocation=\count219
+\c@savedoriglocation=\count220
+\c@origpublisher=\count221
+\c@savedorigpublisher=\count222
+\c@publisher=\count223
+\c@savedpublisher=\count224
+\c@language=\count225
+\c@savedlanguage=\count226
+\c@pageref=\count227
+\c@savedpageref=\count228
+\shorthandwidth=\skip57
+\shortjournalwidth=\skip58
+\shortserieswidth=\skip59
+\shorttitlewidth=\skip60
+\shortauthorwidth=\skip61
+\shorteditorwidth=\skip62
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -625,32 +660,43 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count220
-\c@textcitetotal=\count221
-\c@textcitemaxnames=\count222
-\c@biburlnumpenalty=\count223
-\c@biburlucpenalty=\count224
-\c@biburllcpenalty=\count225
-\c@smartand=\count226
+\c@textcitecount=\count229
+\c@textcitetotal=\count230
+\c@textcitemaxnames=\count231
+\c@biburlnumpenalty=\count232
+\c@biburlucpenalty=\count233
+\c@biburllcpenalty=\count266
+\c@smartand=\count267
 )
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2015/04/19 v3.0 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear-icomp'...
+Package biblatex Info: ... file 'authoryear-icomp.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/authoryear-icomp.bbx
+File: authoryear-icomp.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/A
+B)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count227
-\c@bbx:relatedtotal=\count228
-))
-Package biblatex Info: Trying to load citation style 'authortitle'...
-Package biblatex Info: ... file 'authortitle.cbx' found.
+\c@bbx:relatedcount=\count268
+\c@bbx:relatedtotal=\count269
+)))
+Package biblatex Info: Trying to load citation style 'authoryear-icomp'...
+Package biblatex Info: ... file 'authoryear-icomp.cbx' found.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/authortitle.cbx
-File: authortitle.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/authoryear-icomp.cbx
+File: authoryear-icomp.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -658,11 +704,15 @@ Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
@@ -671,20 +721,20 @@ Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-\CenteringLeftskip=\skip58
-\RaggedLeftLeftskip=\skip59
-\RaggedRightLeftskip=\skip60
-\CenteringRightskip=\skip61
-\RaggedLeftRightskip=\skip62
-\RaggedRightRightskip=\skip63
-\CenteringParfillskip=\skip64
-\RaggedLeftParfillskip=\skip65
-\RaggedRightParfillskip=\skip66
-\JustifyingParfillskip=\skip67
-\CenteringParindent=\skip68
-\RaggedLeftParindent=\skip69
-\RaggedRightParindent=\skip70
-\JustifyingParindent=\skip71
+\CenteringLeftskip=\skip63
+\RaggedLeftLeftskip=\skip64
+\RaggedRightLeftskip=\skip65
+\CenteringRightskip=\skip66
+\RaggedLeftRightskip=\skip67
+\RaggedRightRightskip=\skip68
+\CenteringParfillskip=\skip69
+\RaggedLeftParfillskip=\skip70
+\RaggedRightParfillskip=\skip71
+\JustifyingParfillskip=\skip72
+\CenteringParindent=\skip73
+\RaggedLeftParindent=\skip74
+\RaggedRightParindent=\skip75
+\JustifyingParindent=\skip76
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -702,22 +752,22 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count229
+\Gread@gobject=\count270
 ))
 \Gin@req@height=\dimen132
 \Gin@req@width=\dimen133
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count230
-\float@exts=\toks25
+\c@float@type=\count271
+\float@exts=\toks26
 \float@box=\box28
-\@float@everytoks=\toks26
+\@float@everytoks=\toks27
 \@floatcapt=\box29
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks27
+\AP@output=\toks28
 \AP@partial=\box30
 \AP@footins=\box31
 )
@@ -726,14 +776,18 @@ Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks28
-\verbatim@line=\toks29
+\every@verbatim=\toks29
+\verbatim@line=\toks30
 \verbatim@in@stream=\read2
 )
-\tab@position=\count231
-\tab@size=\count232
-\listing@line=\count233
+\tab@position=\count272
+\tab@size=\count273
+\listing@line=\count274
 )
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
 
@@ -745,29 +799,23 @@ Package biblatex Info: ... file 'german.lbx' found.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 ))
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count266
-\@quotereset=\count267
 (./Exposé.aux)
 \openout1 = `Exposé.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -804,18 +852,18 @@ LaTeX Font Info:    ... okay on input line 67.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 82.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count268
+\c@section@level=\count275
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 
 (./Exposé.out) (./Exposé.out)
 \@outlinefile=\write4
@@ -824,34 +872,30 @@ LaTeX Info: Redefining \nameref on input line 67.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-
-
-Package biblatex Warning: Data encoding is 'utf8'.
-(biblatex)                Use backend=biber.
-
-\openout3 = `Exposé-blx.bib'.
+\openout3 = `Exposé.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Exposé.bbl' not found.
-No file Exposé.bbl.
-Package biblatex Info: Reference section=0 on input line 67.
-Package biblatex Info: Reference segment=0 on input line 67.
+Package biblatex Info: ... file 'Exposé.bbl' found.
+ (./Exposé.bbl)
+Package biblatex Info: Reference section=0 on input line 82.
+Package biblatex Info: Reference segment=0 on input line 82.
+
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 67.
+LaTeX Info: Redefining \selectfont on input line 82.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count269
+\scratchcounter=\count276
 \scratchdimen=\dimen134
 \scratchbox=\box33
-\nofMPsegments=\count270
-\nofMParguments=\count271
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count272
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count279
 \MPscratchDim=\dimen135
-\MPnumerator=\count273
-\makeMPintoPDFobject=\count274
-\everyMPtoPDFconversion=\toks31
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -872,13 +916,13 @@ e
 \openout5 = `Exposé.toc'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Expo
@@ -887,474 +931,154 @@ sé.lof)
 \openout6 = `Exposé.lof'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
  [2] (./Exposé.lot)
 \tf@lot=\write7
 \openout7 = `Exposé.lot'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 68.
+(babel)             in language append on input line 83.
  [3]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 70.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 70.
-
-Overfull \hbox (0.6062pt too wide) in paragraph at lines 71--72
-\OT1/cmr/m/n/12 Gegenstand der Pro-jekt-ar-beit bil-det ein hin-
- []
-
-
-Overfull \hbox (2.87144pt too wide) in paragraph at lines 71--72
-\OT1/cmr/m/n/12 sicht-lich der Ener-gie-ef-fi-zi-enz und Wirt-schaft-
- []
-
-
-Overfull \hbox (60.75827pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 ei-ne Ge-sell-schaft, die min-des-tens drei []Ubertragungswege
- []
-
-
-Overfull \hbox (7.28104pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 be-treibt, die []uber ei-ne Ver-mitt-lungs-stel-le mit-
- []
-
-
-Overfull \hbox (128.36174pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 er, URL: http://www.itwissen.info/definition/lexikon/Netzbetrei
-ber-
- []
-
-
-Overfull \hbox (38.3835pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 carrier-NB.html, zu-letzt ein-ge-se-hen am 01.04.2016.)
- []
-
-
-Overfull \hbox (27.18924pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 sche Trans-port-we-ge und -verfahren zur Verf[]ugung
- []
-
-
-Overfull \hbox (8.75002pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 auf den Carrier-Diensten auf-set-zen (Vgl. Kon-
- []
-
-
-Overfull \hbox (18.90038pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 rad Fa^^Y-nacht, Sie-mens Busi-ness Ser-vices (1997):
- []
-
-
-Overfull \hbox (15.27126pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 Der deut-sche Te-le-kom-mu-ni-ka-ti-ons-markt, URL:
- []
-
-
-Overfull \hbox (45.79738pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 https://www.rz.uni-augsburg.de/info/connect/1997-
- []
-
-
-Overfull \hbox (31.04475pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 02/telemarkt/ (zu-letzt ein-ge-se-hen am 01.04.2016).
- []
-
-
-Overfull \hbox (17.33372pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/12 ten-ver-bin-dun-gen, Richt-funk-stre-cken und Rund-
- []
-
-
-Overfull \hbox (4.01587pt too wide) in paragraph at lines 75--76
-[]\OT1/cmr/m/n/12 Somit um-fasst ein Carrier-Netzwerk nicht
- []
-
-
-Overfull \hbox (43.38213pt too wide) in paragraph at lines 75--76
-\OT1/cmr/m/n/12 le des Zu-gangs-net-zes zu-guns-ten ei-ner ausf[]uhrlicheren
- []
-
-
-Overfull \hbox (19.13324pt too wide) in paragraph at lines 75--76
-\OT1/cmr/m/n/12 und Ag-gre-ga-ti-ons-netz-werk. So bil-det der Broad-
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 78.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 78.
-
-Overfull \hbox (15.46576pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/12 Um den Ener-gie-ver-brauch im Carrier-Netzwerk
- []
-
-
-Overfull \hbox (8.81583pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/12 nung des ge-samt-heit-li-chen Ener-gie-ver-brauchs.
- []
-
-
-Overfull \hbox (45.88489pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/12 deghem und Fi-lip Id-zi-kow-ski in ih-rer Ver[]offentlichung
- []
-
-
-Overfull \hbox (6.73059pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/12 zu-sam-men-ge-tra-ge-nen Wer-te. Die Quel-le bein-
- []
-
-
-Overfull \hbox (1.30896pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/12 blatt des Ener-gie-ver-brauchs der un-ter-schied-
- []
-
-
-Overfull \hbox (1.40843pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/12 li-chen Her-stel-ler. Das Da-ten-blatt glie-dert die
- []
-
-
-Overfull \hbox (39.91693pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/12 Ger[]ate nach den Un-ter-schied-li-chen Layer IP/MPLS,
- []
-
-
-Overfull \hbox (5.55328pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/12 schen Last-be-din-gun-gen han-delt, die sich nach
- []
-
-
-Overfull \hbox (6.65338pt too wide) in paragraph at lines 82--83
-[]\OT1/cmr/m/n/12 Pcore = Pip + Pether-net + Potn + Pwdm 
- []
-
-
-Overfull \hbox (7.29431pt too wide) in paragraph at lines 85--85
-[]\OT1/cmr/bx/n/14.4 Energie-effiziente Tech-no-lo-
- []
-
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language append on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language append on input line 85.
 
-Overfull \hbox (2.15703pt too wide) in paragraph at lines 86--92
-\OT1/cmr/m/n/12 spa-ren von Ener-gie in Carrier-Netzen. In die-
+Overfull \hbox (26.29803pt too wide) in paragraph at lines 88--89
+\OT1/cmr/m/n/12 gungs-wege be-treibt, die []uber ei-ne Ver-mitt-lungs-stel-le m
+it-ein-an-der ver-bun-den sein m[]ussen."(Aus:
  []
 
 
-Overfull \hbox (0.52147pt too wide) in paragraph at lines 86--92
-\OT1/cmr/m/n/12 schaft-lich-keit von Ener-gie-ef-fi-zi-en-ten Netz-ten
- []
-
-
-Overfull \hbox (59.89308pt too wide) in paragraph at lines 86--92
-\OT1/cmr/m/n/12 tung von Swit-ches und Links un-ter der Ber[]ucksichtigung
- []
-
-
-Overfull \hbox (6.62827pt too wide) in paragraph at lines 86--92
-\OT1/cmr/m/n/12 Mikro-elektromechanischen Sys-te-men, die die
- []
-
-
-Overfull \hbox (27.81146pt too wide) in paragraph at lines 86--92
-\OT1/cmr/m/n/12 ge-nutz-ten Ports des schnel-len Swit-ches erm[]oglicht
+Overfull \hbox (120.89691pt too wide) in paragraph at lines 88--89
+\OT1/cmr/m/n/12 IT-Wis-sen (2013): NB (Netz-be-trei-ber) - Car-ri-er, URL: http
+://www.itwissen.info/definition/lexikon/Netzbetreiber-
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 92.
+(babel)             in language append on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 92.
+(babel)             in language append on input line 93.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 92.
+(babel)             in language append on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 92.
-[4
-
-]
-Overfull \hbox (20.64583pt too wide) in paragraph at lines 94--94
-[]\OT1/cmr/bx/n/17.28 Problemstellung und Mo-
- []
-
+(babel)             in language append on input line 100.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 94.
+(babel)             in language append on input line 107.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 94.
-
-Overfull \hbox (6.74918pt too wide) in paragraph at lines 95--96
-\OT1/cmr/m/n/12 Nach ei-ner Sch[]atzung des ICT-Analysehauses
- []
-
-
-Overfull \hbox (5.9853pt too wide) in paragraph at lines 95--96
-\OT1/cmr/m/n/12 Gart-ner er-zeug-te die Informations- und Kom-
- []
-
-
-Overfull \hbox (0.29639pt too wide) in paragraph at lines 95--96
-\OT1/cmr/m/n/12 2% des glo-ba-len Aus-sto-^^Yes an CO2, was dem
- []
-
-
-Overfull \hbox (1.82701pt too wide) in paragraph at lines 95--96
-\OT1/cmr/m/n/12 Seit dem ist der An-teil der Bev[]olkerung welt-
- []
-
-
-Overfull \hbox (5.87003pt too wide) in paragraph at lines 99--100
-\OT1/cmr/m/n/12 des Ener-gie-ver-brauchs von ICT-Infrastruktur
- []
-
-
-Overfull \hbox (32.84143pt too wide) in paragraph at lines 99--100
-\OT1/cmr/m/n/12 zu ver-rin-gern. Nat[]urlich sind ne-ben dem Bem[]uhen,
- []
-
-
-Overfull \hbox (1.46591pt too wide) in paragraph at lines 99--100
-\OT1/cmr/m/n/12 sind ein gro^^Yes Ri-si-ko f[]ur ICT-Provider welt-
- []
-
-
-Overfull \hbox (6.79587pt too wide) in paragraph at lines 101--102
-\OT1/cmr/m/n/12 in-ef-fi-zi-en-ten Net-zen er-ge-ben. Es soll ei-ne Soft-
- []
-
-
-Overfull \hbox (4.60336pt too wide) in paragraph at lines 101--102
-\OT1/cmr/m/n/12 zwei hy-po-the-ti-sche Net-ze mit-ein-an-der zu ver-
- []
-
-
-Overfull \hbox (1.99359pt too wide) in paragraph at lines 101--102
-\OT1/cmr/m/n/12 glei-chen, zum einen ein kon-ven-tio-nel-les Netz,
- []
-
-
-Overfull \hbox (5.87383pt too wide) in paragraph at lines 104--104
-[]\OT1/cmr/bx/n/17.28 Methodisches Vor-ge-hen 
- []
-
+(babel)             in language append on input line 107.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 104.
+(babel)             in language append on input line 107.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 104.
-
-Overfull \hbox (10.14777pt too wide) in paragraph at lines 105--106
-\OT1/cmr/m/n/12 Zur Durchf[]uhrung ei-ner Kal-ku-la-ti-on des Ener-
- []
-
-
-Overfull \hbox (1.73119pt too wide) in paragraph at lines 107--108
-\OT1/cmr/m/n/12 des Ener-gie-ver-brauchs und die Erh[]ohung der
- []
-
-
-Overfull \hbox (14.55605pt too wide) in paragraph at lines 107--108
-\OT1/cmr/m/n/12 Ener-gie-ef-fi-zi-enz in Kom-mu-ni-ka-ti-ons-net-zen her-
- []
-
-
-Overfull \hbox (11.46526pt too wide) in paragraph at lines 107--108
-\OT1/cmr/m/n/12 aus-ge-fun-den wer-den. In ei-nem wei-te-ren Schritt
- []
-
-
-Overfull \hbox (12.83607pt too wide) in paragraph at lines 109--110
-\OT1/cmr/m/n/12 f[]ur die-se Ar-beit re-le-van-ten Sco-pes. Zu kl[]arende
- []
-
-
-Overfull \hbox (1.75557pt too wide) in paragraph at lines 109--110
-\OT1/cmr/m/n/12 netz be-trach-tet wer-den soll, bzw. Wel-che Ge-
- []
-
-
-Overfull \hbox (2.73672pt too wide) in paragraph at lines 111--112
-\OT1/cmr/m/n/12 Sze-na-ri-en (zum einen ein Business-As-Usual-
- []
-
-
-Overfull \hbox (0.62563pt too wide) in paragraph at lines 111--112
-\OT1/cmr/m/n/12 fi-le f[]ur die Si-mu-la-ti-on ver-wen-det wer-den und
- []
-
+(babel)             in language append on input line 107.
+[4]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 112.
+(babel)             in language append on input line 109.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 112.
+(babel)             in language append on input line 109.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 112.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 112.
-[5]
-Overfull \hbox (34.66139pt too wide) in paragraph at lines 113--114
-\OT1/cmr/m/n/12 po-ten-zi-el-len Kos-te-n-er-spar-nis-se durch die Erh[]ohung
- []
-
-
-Overfull \hbox (1.34732pt too wide) in paragraph at lines 113--114
-\OT1/cmr/m/n/12 der Ener-gie-ef-fi-zi-enz ab-gesch[]atzt wer-den. Da-
- []
-
-
-Overfull \hbox (0.19925pt too wide) in paragraph at lines 113--114
-\OT1/cmr/m/n/12 ga-be-pa-ra-me-tern den Ener-gie-ver-brauch ei-nes
- []
-
-
-Overfull \hbox (7.52141pt too wide) in paragraph at lines 115--116
-[]\OT1/cmr/m/n/12 Auf Grund-la-ge die-ser Ent-schei-dun-gen und
- []
-
-
-Overfull \hbox (11.58385pt too wide) in paragraph at lines 119--120
-\OT1/cmr/m/n/12 sen so wie auch die Ma-ni-pu-la-ti-on von Netzlast-
- []
-
-
-Overfull \hbox (37.40303pt too wide) in paragraph at lines 121--122
-\OT1/cmr/m/n/12 dungs-for-mu-la-re zur Be-ar-bei-tung der Netzhardware-
- []
-
-
-Overfull \hbox (2.4145pt too wide) in paragraph at lines 121--122
-\OT1/cmr/m/n/12 meh-re-rer Dia-gram-me (jfreechart) im An-wen-
- []
-
-
-Overfull \hbox (30.26508pt too wide) in paragraph at lines 121--122
-\OT1/cmr/m/n/12 dungs-fens-ter an-ge-zeigt. Die Diagrammerstellungs-
- []
-
-
-Overfull \hbox (2.90201pt too wide) in paragraph at lines 123--124
-[]\OT1/cmr/m/n/12 Der Be-reich Con-trol-ler bein-hal-tet die An-
- []
-
-
-Overfull \hbox (10.37962pt too wide) in paragraph at lines 123--124
-\OT1/cmr/m/n/12 wen-dungs-lo-gik, die Im-ple-men-tie-rung des Port-
- []
-
-
-Overfull \hbox (91.65247pt too wide) in paragraph at lines 123--124
-\OT1/cmr/m/n/12 tel-ten Schlei-fen zum durch-pro-bie-ren der L[]osungsm[]oglich
-keiten
- []
-
-
-Overfull \hbox (32.14198pt too wide) in paragraph at lines 123--124
-\OT1/cmr/m/n/12 (Netzlast-Routing und Energiespar-/Ab-schaltung
- []
-
-
-Overfull \hbox (1.17424pt too wide) in paragraph at lines 123--124
-\OT1/cmr/m/n/12 von Netz-werk-stre-cken) mit dem Ziel der Fin-
- []
-
-
-Overfull \hbox (4.37282pt too wide) in paragraph at lines 123--124
-\OT1/cmr/m/n/12 dung des bes-ten Er-geb-nis-ses (fr[]uher Ab-bruch
- []
-
-
-Overfull \hbox (21.21848pt too wide) in paragraph at lines 123--124
-\OT1/cmr/m/n/12 samt-strom-ver-brauch ei-ner L[]osung ei-ner fr[]uheren
- []
-
-
-Overfull \hbox (9.49915pt too wide) in paragraph at lines 125--126
-[]\OT1/cmr/m/n/12 Allgemein fin-det nur ei-ne sehr ru-di-ment[]are
- []
-
-
-Overfull \hbox (0.6173pt too wide) in paragraph at lines 125--126
-\OT1/cmr/m/n/12 spiels-wei-se liegt es in Ver-ant-wor-tung des An-
- []
-
-
-Overfull \hbox (20.50043pt too wide) in paragraph at lines 125--126
-\OT1/cmr/m/n/12 lung k[]onnte ei-ne kom-ple-xe Plau-si-bi-lit[]atspr[]ufung
- []
-
-
-Overfull \hbox (4.76031pt too wide) in paragraph at lines 127--128
-[]\OT1/cmr/m/n/12 Diese Auf-tei-lung der ein-zel-nen Im-ple-men-
- []
-
-
-Overfull \hbox (7.445pt too wide) in paragraph at lines 127--128
-\OT1/cmr/m/n/12 ten und die je-wei-li-gen Ent-wick-lungs-fort-schrit-
- []
-
-
-Overfull \hbox (161.32953pt too wide) in paragraph at lines 127--128
-\OT1/cmr/m/n/12 te []uber ein git Re-po-si-to-ry auf htt-ps://github.com/Energy
-NetSim/Simulator
- []
-
-
-Overfull \hbox (5.59033pt too wide) in paragraph at lines 127--128
-\OT1/cmr/m/n/12 ver-tei-len k[]onnen. Der je-wei-li-ge Ent-wick-lungs-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 139.
+(babel)             in language append on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 139.
+(babel)             in language append on input line 123.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 139.
+(babel)             in language append on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 139.
-[6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
+(babel)             in language append on input line 123.
+ [5]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 143.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 143.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 143.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 143.
+ [6]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 151.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 151.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 157.
+
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 157.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 164.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 164.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 207.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 207.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 209.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 209.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 240.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 240.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 240.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 240.
+
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 242.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 242.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 242.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 242.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
  (./Exposé.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
-
-
-Package rerunfilecheck Warning: File `Exposé.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Exposé.out':
-(rerunfilecheck)             Before: 5F289C6CDB6E8FDC93D5BF431EDE828F;278
-(rerunfilecheck)             After:  A4180A9389235C099360BE89823425D9;334.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
+Package rerunfilecheck Info: File `Exposé.out' has not changed.
+(rerunfilecheck)             Checksum: 188656CB9341437EABF278FAA3E665FC;596.
 Package logreq Info: Writing requests to 'Exposé.run.xml'.
 \openout1 = `Exposé.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 11836 strings out of 493089
- 183704 string characters out of 6134843
- 400213 words of memory out of 5000000
- 15151 multiletter control sequences out of 15000+600000
- 8568 words of font info for 31 fonts, out of 8000000 for 9000
+ 13027 strings out of 493089
+ 207870 string characters out of 6134843
+ 688721 words of memory out of 5000000
+ 16311 multiletter control sequences out of 15000+600000
+ 8915 words of font info for 32 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 32i,4n,33p,1166b,1461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,48p,1166b,1465s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Exposé.pdf (6 pages, 50446 bytes).
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Exposé.pdf (8 pages, 70649 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

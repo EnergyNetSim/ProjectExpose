@@ -1,0 +1,41 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{NICK2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fd144f65f19df1c7adaa116c44ce2617}{Nick}{N\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{fd144f65f19df1c7adaa116c44ce2617}
+      \strng{fullhash}{fd144f65f19df1c7adaa116c44ce2617}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Testjournal}
+      \field{title}{Test}
+      \field{year}{2016}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
