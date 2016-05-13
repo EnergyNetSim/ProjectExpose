@@ -93,7 +93,7 @@ Somit umfasst ein Carrier-Netzwerk nicht nur das physikalische Backbone-Netz, so
 
 
 \subsection{Energieverbrauch in Netzwerken}
-Um den Energieverbrauch im Carrier-Netzwerk berechnen zu können bedarf es an Werten der im Backbone verwendeten Netzkomponenten. Innerhalb der Simulation wird für die Berechnung des Gesamtverbrauchs auf die definierten Werte zurückgegriffen, die in einer Datenbank gespeichert sind. Ziel dieser Arbeit ist die Simulation und Berechnung des gesamtheitlichen Energieverbrauchs. Deshalb verwendet die Berechnung die von den beiden Wissenschaftler Ward Van Heddeghem und Filip Idzikowski in ihrer Veröffentlichung \cite{vanhedde} zusammengetragenen Werte. Die Quelle beinhaltet zum einen das analytische Model der Berechnung und zum anderen ein Datenblatt \cite{vanhsheet} des Energieverbrauchs der unterschiedlichen Hersteller. Das Datenblatt gliedert die Geräte nach den Unterschiedlichen Layer IP/MPLS, Ethernet, OTN, WDM - (OSI-Layer: 3-2-1-1). Zu beachten ist beim Verwenden der Werte, dass es sich um Werte unter typischen Lastbedingungen handelt, die sich nach der Kapazität der Komponente richtet und nicht nach dem aktuellen Durchsatz. Des Weiteren geben die Werte nur dein Stromverbrauch für den Betrieb an, ein Verbrauch für Kühlung o.Ä. ist nicht enthalten.
+Um den Energieverbrauch im Carrier-Netzwerk berechnen zu können, bedarf es an Werten der im Backbone verwendeten Netzkomponenten. Innerhalb der Simulation wird für die Berechnung des Gesamtverbrauchs auf die definierten Werte zurückgegriffen, die in einer Datenbank gespeichert sind. Ziel dieser Arbeit ist die Simulation und Berechnung des gesamtheitlichen Energieverbrauchs. Deshalb verwendet die Berechnung die von den beiden Wissenschaftler Ward Van Heddeghem und Filip Idzikowski in ihrer Veröffentlichung \cite{vanhedde} zusammengetragenen Werte. Die Quelle beinhaltet zum einen das analytische Model der Berechnung und zum anderen ein Datenblatt \cite{vanhsheet} des Energieverbrauchs der unterschiedlichen Hersteller. Das Datenblatt gliedert die Geräte nach den Unterschiedlichen Layer IP/MPLS, Ethernet, OTN, WDM - (OSI-Layer: 3-2-1-1). Zu beachten ist beim Verwenden der Werte, dass es sich um Werte unter typischen Lastbedingungen handelt, die sich nach der Kapazität der Komponente richtet und nicht nach dem aktuellen Durchsatz. Des Weiteren geben die Werte nur dein Stromverbrauch für den Betrieb an, ein Verbrauch für Kühlung o.Ä. ist nicht enthalten.
 Der Gesamtverbrauch des Core-Networks ergibt sich aus der Summe alle Verbrauche der einzelnen Schichten. 
 
 \begin{equation}
@@ -102,17 +102,13 @@ P_{core} = Pip + Pethernet + Potn + Pwdm
 
 
 \subsection{Energie-effiziente Technologien}
-Der aktuelle Stand der Forschung bietet verschiedene Konzepte und Technologien für das Einsparen von Energie in Carrier-Netzen. In dieser Arbeit sollen ausgewählte Konzepte und Technologien genutzt werden, um die Wirtschaftlichkeit von energieeffizienten Netzen zu analysieren. Die Arbeit beschränkt sich dabei auf die folgenden Konzepte und Technologien: 
+Der aktuelle Stand der Forschung bietet verschiedene Konzepte und Technologien für das Einsparen von Energie in Carrier-Netzen. In dieser Arbeit sollen ausgewählte Konzepte und Technologien genutzt werden, um die Wirtschaftlichkeit von energieeffizienten Netzen zu analysieren. Betrachtet wurden im Rahmen der Literaturrecherche die folgenden Konzepte und Technologien: 
 
 Das erste Konzept sieht eine Vereinfachung des Netzes vor, welche durch eine geographische Aufteilung des Netzes in Submodale (Global -> Kontinental -> National -> Regional -> Zugang) erfolgen kann \cite{aleksic2014}.
 
-Das zweite Konzept befasst sich mit der dynamischen Abschaltung unterlasteter Netzkomponenten. Tageszeit abhängige Schwankungen des Traffics in Netzen ermöglichen eine Individuelle und dynamische Abschaltung von Switches und Links unter der Berücksichtigung der QoS-Bedingungen \cite{aleksic2013}. Dabei werden Algorithmen zur Identifikation von individuell abschaltbaren Links verwendet \cite{fisher}.
-Bei den Technologieren beschränkt sich diese Arbeit auf Optische Leitungsvermittelnde Switch und das Hybrid Optical Switching (HOS). 
+Das zweite Konzept befasst sich mit der dynamischen Abschaltung unterlasteter Netzkomponenten. Tageszeitabhängige Schwankungen des Traffics in Netzen ermöglichen eine individuelle und dynamische Abschaltung von Switches und Links unter der Berücksichtigung der QoS-Bedingungen \cite{aleksic2013}. Dabei werden Algorithmen zur Identifikation von individuell abschaltbaren Links verwendet \cite{fisher}.
 
-Optische Leitungsvermittelnde Switche basieren auf Mikro-elektromechanischen Systemen, die die geringste Menge an Energie benötigen und eine hohe Portanzahl besitzen. Das Hybrid Optical Switching verwendet eine Kombination aus optischen und elektronischen Netzknoten, die optische Leitungen, Bursts, und Pakete effizient Switches können. Durch die Kombination von langsamen und schnellen Switches, können Wellenlängenbereiche dynamischen zwischen zwei Switches geändert werden. Das temporäre Abschalten von ungenutzten Ports des schnellen Switches ermöglicht eine Energieeinsparung.  \cite{aleksic2013}
-
-
-%\newpage
+Bei den Technologien beschränkt sich diese Arbeit auf optische leitungsvermittelnde Switche und das Hybrid Optical Switching (HOS). Optische leitungsvermittelnde Switche basieren auf mikro-elektromechanischen Systemen, die die geringste Menge an Energie benötigen und eine hohe Portanzahl besitzen. Das Hybrid Optical Switching verwendet eine Kombination aus optischen und elektronischen Netzknoten, die optische Leitungen, Bursts, und Pakete effizient Switches können. Durch die Kombination von langsamen und schnellen Switches, können Wellenlängenbereiche dynamisch zwischen zwei Switches geändert werden. Das temporäre Abschalten von ungenutzten Ports des schnellen Switches ermöglicht eine Energieeinsparung.  \cite{aleksic2013}
 
 \section{Problemstellung und Motivation}
 Nach einer Schätzung des ICT-Analysehauses Gartner erzeugte die Informations- und Kommunikationstechnologie im Jahr 2007 rund 2\% des globalen Ausstoßes an CO2, was dem Ausstoß der Flugzeugbranche entspricht \cite{gartner}. Seit dem ist der Anteil der Bevölkerung weltweit, der das Internet verwendet, von 20,6\% (2007) auf 43,4\% (2015) gestiegen \cite{itu}. Dieses Wachstum wird sich in der nächsten Zukunft nicht verlangsamen. Es ist also unabdingbar, den CO2-Ausstoß, der durch ICT im Allgemeinen verursacht wird, drastisch zu verringern.
@@ -130,9 +126,9 @@ Die vorliegende Arbeit beschränkt sich auf die ökonomischen Zwänge, die sich 
 
 
 \section{Methodisches Vorgehen}
-Zur Durchführung einer Kalkulation des Energiesparpotentials und möglicher Kostenersparnisse unter Verwendung von energieeffizienten Netztechnologien und – Konzepten wurde folgendes methodisches Vorgehen entwickelt. 
+Zur Durchführung einer Kalkulation des Energiesparpotentials und möglicher Kostenersparnisse durch Verwendung von energieeffizienten Netztechnologien und -konzepten wurde folgendes methodisches Vorgehen entwickelt. 
  
-Zunächst sollen im Rahmen der Literaturrecherche Methoden für die Reduzierung des Energieverbrauchs und die Erhöhung der Energieeffizienz in Kommunikationsnetzen herausgefunden werden. In einem weiteren Schritt gilt es alle gefundenen Technologien zu konsolidieren, das Netz zu spezifizieren und verschiedene Szenarien, die anschließend verglichen werden sollen, zu definieren. 
+Zunächst sollen im Rahmen der Literaturrecherche Methoden für die Reduzierung des Energieverbrauchs und die Erhöhung der Energieeffizienz in Kommunikationsnetzen ermittelt werden. In einem weiteren Schritt gilt es alle gefundenen Technologien zu konsolidieren, das Netz zu spezifizieren und verschiedene Szenarien, die anschließend verglichen werden sollen, zu definieren. 
  
 Bei der Spezifikation des Netzes liegt ein Hauptaugenmerk auf der Eingrenzung des für diese Arbeit relevanten Scopes. Zu klärende Fragen sind in diesem Zusammenhang, ob nur das Kernnetz oder auch das Zugangsnetz betrachtet werden soll bzw. welche Generationen der Netze zu untersuchen sind. 
  
@@ -140,21 +136,19 @@ Zur Vorbereitung der Entwicklung der Simulationssoftware müssen darauf folgend 
  
 Anschließend sollen der Gesamtenergieverbrauch des jeweiligen Netzes sowie die potenziellen Kostenersparnisse durch die Erhöhung der Energieeffizienz abgeschätzt werden. Dazu gilt es insbesondere einen "Algorithmus" zu entwickeln, der basierend auf variablen Eingabeparametern den Energieverbrauch eines Netzes berechnet. 
  
-Auf Grundlage dieser Entscheidungen und Planung soll dann der Prozess der Softwareentwicklung beginnen, nach dem Wasserfallmodell ablaufen wird. Die Programmaufteilung und geforderte Funktionen sind bereits vor der Implementierung hinreichend bekannt, so dass die Anwendung eines Agilen Entwicklungsmodells hier keine entscheidenden Vorteile bietet.
+Auf Grundlage dieser Entscheidungen und Planung soll dann der Prozess der Softwareentwicklung beginnen, der nach dem Wasserfallmodell ablaufen wird. Die Programmaufteilung und geforderte Funktionen sind bereits vor der Implementierung hinreichend bekannt, so dass die Anwendung eines agilen Entwicklungsmodells hier keine entscheidenden Vorteile bietet.
  
 Die Softwarelösung wird als objektorientierte Java Desktop Anwendung mit einer Einteilung der Klassen in die drei Bereiche Model, View und Controller implementiert.
  
-Der Bereich Model beinhaltet das Einlesen so wie auch die Manipulation von Netzlast-Werten, Hardwarekonfigurationen und sonstigen für die Berechnung notwendigen Daten aus einer von uns im Rahmen dieses Projektes entwickelten MySQL / MariaDB Datenbank. Die in der Simulation errechneten Ergebnismengen werden in diesem Bereich gespeichert und auch die finale Datenbewertung ("Geschäftslogik") wird hier implementiert.
+Der Bereich Model beinhaltet das Einlesen so wie auch die Manipulation von Netzlast-Werten, Hardwarekonfigurationen und sonstigen für die Berechnung notwendigen Daten aus einer im Rahmen dieses Projektes entwickelten MySQL-Datenbank. Die in der Simulation errechneten Ergebnismengen werden in diesem Bereich gespeichert und auch die finale Datenbewertung ("Geschäftslogik") wird hier implementiert.
  
-Der Bereich View beinhaltet die Anwendungsformulare zur Bearbeitung der Netz\-hard\-ware- und Verbindungs-Kon\-figura\-tion, zur Auswahl von Konfigurationsparametern für die Simulation und zum Anzeigen der berechneten Ergebnisse. Das Ergebnis der Simulation wird in Form von Tabellen (z.B. Iterationsnummer| Netzlast | elektr. Stromverbrauch | \% von Maximalverbrauch) und mehrerer Diagramme (jfreechart) im Anwendungsfenster angezeigt. Die Diagrammerstellungs- und Anzeigefunktionen werden auch in diesem Bereich abgelegt.
+Der Bereich View beinhaltet die Anwendungsformulare zur Bearbeitung der Netz\-hard\-ware- und Verbindungs-Kon\-figura\-tion, zur Auswahl von Konfigurationsparametern für die Simulation und zum Anzeigen der berechneten Ergebnisse. Das Ergebnis der Simulation wird in Form von Tabellen (z.B. Iterationsnummer | Netzlast | elektr. Stromverbrauch | \% von Maximalverbrauch) und mehrerer Diagramme (jfreechart) im Anwendungsfenster angezeigt. Die Diagrammerstellungs- und Anzeigefunktionen werden auch in diesem Bereich abgelegt.
  
 Der Bereich Controller beinhaltet die Anwendungslogik, die Implementierung des Portabschaltungsalgorithmus "Exhaustive Greedy Algorithm" (bei Erfüllung der Netzlast-Anforderungen, Einhaltung eines vom Anwender der Simulationssoftware festgelegten maximalen Hop-Counts und die verschachtelten Schleifen zum durchprobieren der Lösungs\-möglich\-keiten (Netzlast-Routing und Energiespar-/Ab-schaltung von Netzwerkstrecken) mit dem Ziel der Findung des besten Ergebnisses (früher Abbruch einer Schleifeniteration, wenn die Vorgaben nicht mehr eingehalten werden oder der Gesamtstromverbrauch einer Lösung einer früheren Iteration überschritten wurde). Um ein Ergebnis im Zeitlichen Verlauf abhängig von den konfigurierten Netzlast-Daten zu erzielen wird iterativ je zeitlichem Abschnitt die Lösungsberechnung durchgeführt und in Ergebnistabellen eingetragen.
  
 Allgemein findet nur eine sehr rudimentäre Validation der Benutzereingaben statt. Beispielsweise liegt es in Verantwortung des Anwenders, keine für das konfigurierte Netz zu große Netzspitzenlast zu konfigurieren. (Out of Scope) In einer späteren Weiterentwicklung könnte eine komplexe Plausibilitätsprüfung implementiert werden.
  
 Diese Aufteilung der einzelnen Implementierungsaspekte erlaubt eine Verteilung der Entwicklungsarbeit auf die Projektmitglieder, so dass diese voneinander weitgehend unabhängig an der Implementierung arbeiten und die jeweiligen Entwicklungsfortschritte über ein git Repository auf https://github.com/EnergyNetSim/Simulator verteilen können. Der jeweilige Entwicklungsfortschritt ist spätestens alle 3 Tage und bei Fertigstellung einzelner Teilfunktionen auf das git Repository zu commiten und pushen.
- 
-Zum Schluss müssen eine Dokumentation über das entwickelte Simulationstool geschrieben und Ergebnisse in einem Fazit diskutiert und bewertet werden. 
 
 \section{Projektmanagement und Zeitplan}
 In Anbetracht der genau festgelegten Terminstruktur des Moduls wurde entschieden, das Projektmanagement mit klassischen Methoden (in Anlehnung an IPMA ICB 3.0 \citep{icb}) durchzuführen. Im folgenden seien die Arbeitspakete sowie die Ablauf- und Terminplanung des Projekts exemplarisch gemäß ihrem aktuellen Stand genannt. 
@@ -229,7 +223,7 @@ Die Ablaufplanung ist in Abbildung \ref{fig:gantt} beschrieben und im Ganttchart
 \end{figure}
 
  \subsection{Meilensteine}
-Die Meilensteine des Projekts können Tabelle \ref{tab:milestones} entnommen werden
+Die Meilensteine des Projekts können Tabelle \ref{tab:milestones} entnommen werden.
  
 
  
@@ -254,7 +248,7 @@ M11 &Abgabe Präsentation/Code	&TBA (KW28)\\
 M11 &Präsentation	& KW28\\ \hline
     \end{tabular}
     
-    \caption{Ablauf- und Terminplan als Gantt-Chart}
+    \caption{Meilensteine}
     
     \label{tab:milestones}
 \end{table}
