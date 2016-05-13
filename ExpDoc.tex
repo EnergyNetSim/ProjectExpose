@@ -2,7 +2,7 @@
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 
-\usepackage{csquotes}%NC: needed for babel
+\usepackage[autostyle=true,german=quotes]{csquotes}%NC: needed for babel
 
 \usepackage[a4paper , lmargin = {2.5cm} , rmargin = {2.5cm} , tmargin =
 {2cm} , bmargin = {2cm}]{geometry}
@@ -82,12 +82,15 @@
 
 
 \begin{document}
+\title{\huge{Wirtschaftlichkeit von energieeffizienten Netzkonzepten} \\ \large{Exposé}} 
+\author{Veronika Lawrence, Carmen Scheer, Nicholas Cariss, Maximilian Junker,\\ Christian Keck, Stefan Ludowicy, Dominik Schneider} 
+\maketitle
 \firstpages
 %\twocolumn
 \section{Stand der Forschung}
 Gegenstand der Projektarbeit bildet ein hinsichtlich der Energieeffizienz und Wirtschaftlichkeit zu optimierendes Carrier-Netzwerk.
 
-Unter einem Carrier "versteht man […] eine Gesellschaft, die mindestens drei Übertra\-gungs\-wege betreibt, die über eine Vermittlungsstelle miteinander verbunden sein müssen." (aus: \cite{carrier}) Ein Carrier-Netzwerk stellt somit physikalische Transportwege und -verfahren zur Verfügung und bildet die Grundlage für sogenannte Value Added Services von Providern, welche auf den Carrier-Diensten aufsetzen \cite{fassnacht}. "Bei den TK-Transportwegen unterscheidet man leitergebundene Verbindungen auf der Basis von Kupferkabeln oder Lichtwellenleitern sowie Funkverbindungen wie Satellitenverbindungen, Richtfunkstrecken und Rundfunkverbindungen." (Aus: Ebd.)
+Unter einem Carrier "`versteht man […] eine Gesellschaft, die mindestens drei Übertra\-gungs\-wege betreibt, die über eine Vermittlungsstelle miteinander verbunden sein müssen"' (aus: \cite{carrier}). Ein Carrier-Netzwerk stellt somit physikalische Transportwege und -verfahren zur Verfügung und bildet die Grundlage für sogenannte Value Added Services von Providern, welche auf den Carrier-Diensten aufsetzen \cite{fassnacht}. "`Bei den TK-Transportwegen unterscheidet man leitergebundene Verbindungen auf der Basis von Kupferkabeln oder Lichtwellenleitern sowie Funkverbindungen wie Satellitenverbindungen, Richtfunkstrecken und Rundfunkverbindungen"' (Aus: Ebd.).
 
 Somit umfasst ein Carrier-Netzwerk nicht nur das physikalische Backbone-Netz, sondern auch das Zugangs- und Aggregationsnetzwerk. Im Rahmen des Projektes entfällt die Betrachtung der Optimierungspotentiale des Zugangsnetzes zugunsten einer aus\-führ\-lich\-eren Simulation von wirtschaftlichen und energieeffizienten Netzkonzepten im Backbone- und Aggregationsnetzwerk. So bildet der Broadband Network Gateway (BNG) die niedrigste Netzelementebene. Multi-Service Access Nodes (MSAN), Digital Subscriber Line Access Multiplexer (DSLAM), enhanced NodeBs (eNodeB) und weitere Netzelemente der nächsttieferen Hierarchiestufe fallen somit aus der Betrachtung.
 
@@ -97,16 +100,16 @@ Um den Energieverbrauch im Carrier-Netzwerk berechnen zu können, bedarf es an W
 Der Gesamtverbrauch des Core-Networks ergibt sich aus der Summe alle Verbrauche der einzelnen Schichten. 
 
 \begin{equation}
-P_{core} = Pip + Pethernet + Potn + Pwdm
+P_{core} = P_{ip} + P_{ethernet} + P_{otn} + P_{wdm}
 \end{equation}
 
 
 \subsection{Energie-effiziente Technologien}
 Der aktuelle Stand der Forschung bietet verschiedene Konzepte und Technologien für das Einsparen von Energie in Carrier-Netzen. In dieser Arbeit sollen ausgewählte Konzepte und Technologien genutzt werden, um die Wirtschaftlichkeit von energieeffizienten Netzen zu analysieren. Betrachtet wurden im Rahmen der Literaturrecherche die folgenden Konzepte und Technologien: 
 
-Das erste Konzept sieht eine Vereinfachung des Netzes vor, welche durch eine geographische Aufteilung des Netzes in Submodale (Global -> Kontinental -> National -> Regional -> Zugang) erfolgen kann \cite{aleksic2014}.
+Das erste Konzept sieht eine Vereinfachung des Netzes vor, welche durch eine geographische Aufteilung des Netzes in Submodale (Global - Kontinental - National - Regional - Zugang) erfolgen kann \cite{aleksic2014}.
 
-Das zweite Konzept befasst sich mit der dynamischen Abschaltung unterlasteter Netzkomponenten. Tageszeitabhängige Schwankungen des Traffics in Netzen ermöglichen eine individuelle und dynamische Abschaltung von Switches und Links unter der Berücksichtigung der QoS-Bedingungen \cite{aleksic2013}. Dabei werden Algorithmen zur Identifikation von individuell abschaltbaren Links verwendet \cite{fisher}.
+Das zweite Konzept befasst sich mit der dynamischen Abschaltung unterlasteter Netzkomponenten. Tageszeitabhängige Schwankungen des Traffics in Netzen ermöglichen eine individuelle und dynamische Abschaltung von Switches und Links unter der Be\-rück\-sich\-ti\-gung der QoS-Bedingungen \cite{aleksic2013}. Dabei werden Algorithmen zur Identifikation von individuell abschaltbaren Links verwendet \cite{fisher}.
 
 Bei den Technologien beschränkt sich diese Arbeit auf optische leitungsvermittelnde Switche und das Hybrid Optical Switching (HOS). Optische leitungsvermittelnde Switche basieren auf mikro-elektromechanischen Systemen, die die geringste Menge an Energie benötigen und eine hohe Portanzahl besitzen. Das Hybrid Optical Switching verwendet eine Kombination aus optischen und elektronischen Netzknoten, die optische Leitungen, Bursts, und Pakete effizient Switches können. Durch die Kombination von langsamen und schnellen Switches, können Wellenlängenbereiche dynamisch zwischen zwei Switches geändert werden. Das temporäre Abschalten von ungenutzten Ports des schnellen Switches ermöglicht eine Energieeinsparung.  \cite{aleksic2013}
 
@@ -122,7 +125,7 @@ Nach einer Schätzung des ICT-Analysehauses Gartner erzeugte die Informations- u
 
 Da aller Bemühungen zum Trotz die fossilen Energieträger Erdöl, Kohle und Erdgas weiterhin ca. 81\% der weltweiten Energieerzeugung ausmachen \cite{statista}, ist die Reduktion des Energieverbrauchs von ICT-Infrastruktur ein wichtiger Ansatz, um den CO2-Ausstoß zu verringern. Natürlich sind neben dem Bemühen, ICT grüner zu gestalten, wirtschaftliche Bedenken ein weiterer wichtiger Treiber für das Streben nach mehr Energieeffizienz. Langfristig steigende Energiekosten (\cite{iea2015}, S. 40f) sind ein großes Risiko für ICT-Provider weltweit, die insgesamt mit steigenden Kosten zu kämpfen haben.
  
-Die vorliegende Arbeit beschränkt sich auf die ökonomischen Zwänge, die sich aus ineffizienten Netzen ergeben. Es soll eine Software entwickelt werden, die es ermöglicht, zwei hypothetische Netze miteinander zu vergleichen, zum einen ein konventionelles Netz, wie es heutzutage Stand der Technik ist, zum anderen ein energieeffizientes Netz, das die vorhandenen Technologien und Konzepte zur Effizienzsteigerung sinnvoll verbindet. Anhand des berechneten Energieverbrauchs der beiden Netze wird das Energiesparpotenzial sowie die möglichen Kosteneinsparungen durch den Betrieb des energieeffizienten Netzes ausgegeben.
+Die vorliegende Arbeit beschränkt sich auf die ökonomischen Zwänge, die sich aus ineffizienten Netzen ergeben. Es soll eine Software entwickelt werden, die es ermöglicht, zwei hypothetische Netze miteinander zu vergleichen, zum einen ein konventionelles Netz, wie es heutzutage Stand der Technik ist, zum anderen ein energieeffizientes Netz, das die vorhandenen Technologien und Konzepte zur Effizienzsteigerung sinnvoll einsetzt. Anhand des berechneten Energieverbrauchs der beiden Netze wird das Energiesparpotenzial sowie die möglichen Kosteneinsparungen durch den Betrieb des energieeffizienten Netzes ausgegeben.
 
 
 \section{Methodisches Vorgehen}
@@ -130,21 +133,21 @@ Zur Durchführung einer Kalkulation des Energiesparpotentials und möglicher Kos
  
 Zunächst sollen im Rahmen der Literaturrecherche Methoden für die Reduzierung des Energieverbrauchs und die Erhöhung der Energieeffizienz in Kommunikationsnetzen ermittelt werden. In einem weiteren Schritt gilt es alle gefundenen Technologien zu konsolidieren, das Netz zu spezifizieren und verschiedene Szenarien, die anschließend verglichen werden sollen, zu definieren. 
  
-Bei der Spezifikation des Netzes liegt ein Hauptaugenmerk auf der Eingrenzung des für diese Arbeit relevanten Scopes. Zu klärende Fragen sind in diesem Zusammenhang, ob nur das Kernnetz oder auch das Zugangsnetz betrachtet werden soll bzw. welche Generationen der Netze zu untersuchen sind. 
+Bei der Spezifikation des Netzes liegt ein Hauptaugenmerk auf der Eingrenzung des für diese Arbeit relevanten Scopes. Im Rahmen dieser Arbeit soll dabei ein komplettes Carriernetzwerk modelliert, bezüglich Einsparpotentialen jedoch nur das Core-Netz betrachtet werden.
  
 Zur Vorbereitung der Entwicklung der Simulationssoftware müssen darauf folgend Szenarien (zum einen ein Business-As-Usual- und ein energieeffizientes Netz) modelliert werden. Wichtig ist dabei zu klären, aus wie vielen und welchen Netzkomponenten das jeweilige Netz besteht, welche Nutzungsprofile für die Simulation verwendet werden und welche Konfigurationsmöglichkeiten der Anwender der Simulationssoftware haben soll. 
  
-Anschließend sollen der Gesamtenergieverbrauch des jeweiligen Netzes sowie die potenziellen Kostenersparnisse durch die Erhöhung der Energieeffizienz abgeschätzt werden. Dazu gilt es insbesondere einen "Algorithmus" zu entwickeln, der basierend auf variablen Eingabeparametern den Energieverbrauch eines Netzes berechnet. 
+Anschließend sollen der Gesamtenergieverbrauch des jeweiligen Netzes sowie die potenziellen Kostenersparnisse durch die Erhöhung der Energieeffizienz abgeschätzt werden. Dazu gilt es insbesondere einen "`Algorithmus"' zu entwickeln, der basierend auf variablen Eingabeparametern den Energieverbrauch eines Netzes berechnet. 
  
 Auf Grundlage dieser Entscheidungen und Planung soll dann der Prozess der Softwareentwicklung beginnen, der nach dem Wasserfallmodell ablaufen wird. Die Programmaufteilung und geforderte Funktionen sind bereits vor der Implementierung hinreichend bekannt, so dass die Anwendung eines agilen Entwicklungsmodells hier keine entscheidenden Vorteile bietet.
  
 Die Softwarelösung wird als objektorientierte Java Desktop Anwendung mit einer Einteilung der Klassen in die drei Bereiche Model, View und Controller implementiert.
  
-Der Bereich Model beinhaltet das Einlesen so wie auch die Manipulation von Netzlast-Werten, Hardwarekonfigurationen und sonstigen für die Berechnung notwendigen Daten aus einer im Rahmen dieses Projektes entwickelten MySQL-Datenbank. Die in der Simulation errechneten Ergebnismengen werden in diesem Bereich gespeichert und auch die finale Datenbewertung ("Geschäftslogik") wird hier implementiert.
+Der Bereich Model beinhaltet das Einlesen so wie auch die Manipulation von Netzlast-Werten, Hardwarekonfigurationen und sonstigen für die Berechnung notwendigen Daten aus einer im Rahmen dieses Projektes entwickelten MySQL-Datenbank. Die in der Simulation errechneten Ergebnismengen werden in diesem Bereich gespeichert und auch die finale Datenbewertung ("`Geschäftslogik"') wird hier implementiert.
  
 Der Bereich View beinhaltet die Anwendungsformulare zur Bearbeitung der Netz\-hard\-ware- und Verbindungs-Kon\-figura\-tion, zur Auswahl von Konfigurationsparametern für die Simulation und zum Anzeigen der berechneten Ergebnisse. Das Ergebnis der Simulation wird in Form von Tabellen (z.B. Iterationsnummer | Netzlast | elektr. Stromverbrauch | \% von Maximalverbrauch) und mehrerer Diagramme (jfreechart) im Anwendungsfenster angezeigt. Die Diagrammerstellungs- und Anzeigefunktionen werden auch in diesem Bereich abgelegt.
  
-Der Bereich Controller beinhaltet die Anwendungslogik, die Implementierung des Portabschaltungsalgorithmus "Exhaustive Greedy Algorithm" (bei Erfüllung der Netzlast-Anforderungen, Einhaltung eines vom Anwender der Simulationssoftware festgelegten maximalen Hop-Counts und die verschachtelten Schleifen zum durchprobieren der Lösungs\-möglich\-keiten (Netzlast-Routing und Energiespar-/Ab-schaltung von Netzwerkstrecken) mit dem Ziel der Findung des besten Ergebnisses (früher Abbruch einer Schleifeniteration, wenn die Vorgaben nicht mehr eingehalten werden oder der Gesamtstromverbrauch einer Lösung einer früheren Iteration überschritten wurde). Um ein Ergebnis im Zeitlichen Verlauf abhängig von den konfigurierten Netzlast-Daten zu erzielen wird iterativ je zeitlichem Abschnitt die Lösungsberechnung durchgeführt und in Ergebnistabellen eingetragen.
+Der Bereich Controller beinhaltet die Anwendungslogik, die Implementierung des Portabschaltungsalgorithmus "`Exhaustive Greedy Algorithm"' (bei Erfüllung der Netzlast-Anforderungen, Einhaltung eines vom Anwender der Simulationssoftware festgelegten maximalen Hop-Counts und die verschachtelten Schleifen zum durchprobieren der Lösungs\-möglich\-keiten (Netzlast-Routing und Energiespar-/Ab-schaltung von Netzwerkstrecken) mit dem Ziel der Findung des besten Ergebnisses (früher Abbruch einer Schleifeniteration, wenn die Vorgaben nicht mehr eingehalten werden oder der Gesamtstromverbrauch einer Lösung einer früheren Iteration überschritten wurde). Um ein Ergebnis im Zeitlichen Verlauf abhängig von den konfigurierten Netzlast-Daten zu erzielen wird iterativ je zeitlichem Abschnitt die Lösungsberechnung durchgeführt und in Ergebnistabellen eingetragen.
  
 Allgemein findet nur eine sehr rudimentäre Validation der Benutzereingaben statt. Beispielsweise liegt es in Verantwortung des Anwenders, keine für das konfigurierte Netz zu große Netzspitzenlast zu konfigurieren. (Out of Scope) In einer späteren Weiterentwicklung könnte eine komplexe Plausibilitätsprüfung implementiert werden.
  
