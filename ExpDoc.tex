@@ -93,19 +93,24 @@ Somit umfasst ein Carrier-Netzwerk nicht nur das physikalische Backbone-Netz, so
 
 
 \subsection{Energieverbrauch in Netzwerken}
-Um den Energieverbrauch im Carrier-Netzwerk berechnen zu können bedarf es an Werten der im Backbone verwendeten Netzkomponenten. Innerhalb der Simulation wird für die Berechnung des Gesamtverbrauchs auf die definierten Werte zurückgegriffen, die in einer Datenbank gespeichert sind. Ziel dieser Arbeit ist die Simulation und Berechnung des gesamtheitlichen Energieverbrauchs. Deshalb verwendet die Berechnung die von den beiden Wissenschaftler Ward Van Heddeghem und Filip Idzikowski in ihrer Veröffentlichung zusammengetragenen Werte. Die Quelle beinhaltet zum einen das analytische Model der Berechnung und zum anderen ein Datenblatt des Energieverbrauchs der unterschiedlichen Hersteller. Das Datenblatt gliedert die Geräte nach den Unterschiedlichen Layer IP/MPLS, Ethernet, OTN, WDM - (OSI-Layer: 3-2-1-1). Zu beachten ist beim Verwenden der Werte, dass es sich um Werte unter typischen Lastbedingungen handelt, die sich nach der Kapazität der Komponente richtet und nicht nach dem aktuellen Durchsatz. Des Weiteren geben die Werte nur dein Stromverbrauch für den Betrieb an, ein Verbrauch für Kühlung o.Ä. ist nicht enthalten.
+Um den Energieverbrauch im Carrier-Netzwerk berechnen zu können bedarf es an Werten der im Backbone verwendeten Netzkomponenten. Innerhalb der Simulation wird für die Berechnung des Gesamtverbrauchs auf die definierten Werte zurückgegriffen, die in einer Datenbank gespeichert sind. Ziel dieser Arbeit ist die Simulation und Berechnung des gesamtheitlichen Energieverbrauchs. Deshalb verwendet die Berechnung die von den beiden Wissenschaftler Ward Van Heddeghem und Filip Idzikowski in ihrer Veröffentlichung \cite{vanhedde} zusammengetragenen Werte. Die Quelle beinhaltet zum einen das analytische Model der Berechnung und zum anderen ein Datenblatt \cite{vanhsheet} des Energieverbrauchs der unterschiedlichen Hersteller. Das Datenblatt gliedert die Geräte nach den Unterschiedlichen Layer IP/MPLS, Ethernet, OTN, WDM - (OSI-Layer: 3-2-1-1). Zu beachten ist beim Verwenden der Werte, dass es sich um Werte unter typischen Lastbedingungen handelt, die sich nach der Kapazität der Komponente richtet und nicht nach dem aktuellen Durchsatz. Des Weiteren geben die Werte nur dein Stromverbrauch für den Betrieb an, ein Verbrauch für Kühlung o.Ä. ist nicht enthalten.
 Der Gesamtverbrauch des Core-Networks ergibt sich aus der Summe alle Verbrauche der einzelnen Schichten. 
 
-Pcore = Pip + Pethernet + Potn + Pwdm
+\begin{equation}
+P_{core} = Pip + Pethernet + Potn + Pwdm
+\end{equation}
 
 
 \subsection{Energie-effiziente Technologien}
-Der Stand der Forschung bietet verschiedene Konzepte und Technologien für das Einsparen von Energie in Carrier-Netzen. In dieser Arbeit sollen ausgewählte Konzepte und Technologien genutzt werden, um die Wirtschaftlichkeit von Energieeffizienten Netzten zu analysieren. 
-Die Arbeit beschränkt sich dabei auf die folgenden Konzepte und Technologien: 
-Das erste Konzept sieht eine Vereinfachung des Netzes vor, welche durch eine geographische Aufteilung des Netzes in Submodale (Global -> Kontinental -> National -> Regional -> Zugang) erfolgen kann.
-Das zweite Konzept befasst sich mit der dynamischen Abschaltung unterlasteter Netzkomponenten. Tageszeit abhängige Schwankungen des Traffic’s in Netzen ermöglichen eine Individuelle und dynamische Abschaltung von Switches und Links unter der Berücksichtigung der QoS-Bedingungen.  
+Der aktuelle Stand der Forschung bietet verschiedene Konzepte und Technologien für das Einsparen von Energie in Carrier-Netzen. In dieser Arbeit sollen ausgewählte Konzepte und Technologien genutzt werden, um die Wirtschaftlichkeit von energieeffizienten Netzen zu analysieren. Die Arbeit beschränkt sich dabei auf die folgenden Konzepte und Technologien: 
+
+Das erste Konzept sieht eine Vereinfachung des Netzes vor, welche durch eine geographische Aufteilung des Netzes in Submodale (Global -> Kontinental -> National -> Regional -> Zugang) erfolgen kann \cite{aleksic2014}.
+
+Das zweite Konzept befasst sich mit der dynamischen Abschaltung unterlasteter Netzkomponenten. Tageszeit abhängige Schwankungen des Traffics in Netzen ermöglichen eine Individuelle und dynamische Abschaltung von Switches und Links unter der Berücksichtigung der QoS-Bedingungen \cite{aleksic2013}. Dabei werden Algorithmen zur Identifikation von individuell abschaltbaren Links verwendet \cite{fisher}.
 Bei den Technologieren beschränkt sich diese Arbeit auf Optische Leitungsvermittelnde Switch und das Hybrid Optical Switching (HOS). 
-Optische Leitungsvermittelnde Switche basieren auf Mikro-elektromechanischen Systemen, die die geringste Menge an Energie benötigen und eine hohe Portanzahl besitzen. Das Hybrid Optical Switching verwendet eine Kombination aus optischen und elektronischen Netzknoten, die optische Leitungen, Bursts, und Pakete effizient Switches können. Durch die Kombination von langsamen und schnellen Switches, können Wellenlängenbereiche dynamischen zwischen zwei Switches geändert werden. Das temporäre Abschalten von ungenutzten Ports des schnellen Switches ermöglicht eine Energieeinsparung. 
+
+Optische Leitungsvermittelnde Switche basieren auf Mikro-elektromechanischen Systemen, die die geringste Menge an Energie benötigen und eine hohe Portanzahl besitzen. Das Hybrid Optical Switching verwendet eine Kombination aus optischen und elektronischen Netzknoten, die optische Leitungen, Bursts, und Pakete effizient Switches können. Durch die Kombination von langsamen und schnellen Switches, können Wellenlängenbereiche dynamischen zwischen zwei Switches geändert werden. Das temporäre Abschalten von ungenutzten Ports des schnellen Switches ermöglicht eine Energieeinsparung.  \cite{aleksic2013}
+
 
 %\newpage
 
@@ -115,10 +120,9 @@ Nach einer Schätzung des ICT-Analysehauses Gartner erzeugte die Informations- u
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{statista}
-    \caption{Awesome Image}
-    \label{fig:awesome_image}
+    \caption{Verteilung der weltweiten Energieerzeugung nach Energieträger im Jahr 2013 (Quelle: statista)}
+    \label{fig:statista}
 \end{figure}
-%\afterpage{\clearpage}
 
 Da aller Bemühungen zum Trotz die fossilen Energieträger Erdöl, Kohle und Erdgas weiterhin ca. 81\% der weltweiten Energieerzeugung ausmachen \cite{statista}, ist die Reduktion des Energieverbrauchs von ICT-Infrastruktur ein wichtiger Ansatz, um den CO2-Ausstoß zu verringern. Natürlich sind neben dem Bemühen, ICT grüner zu gestalten, wirtschaftliche Bedenken ein weiterer wichtiger Treiber für das Streben nach mehr Energieeffizienz. Langfristig steigende Energiekosten (\cite{iea2015}, S. 40f) sind ein großes Risiko für ICT-Provider weltweit, die insgesamt mit steigenden Kosten zu kämpfen haben.
  
@@ -151,98 +155,112 @@ Allgemein findet nur eine sehr rudimentäre Validation der Benutzereingaben stat
 Diese Aufteilung der einzelnen Implementierungsaspekte erlaubt eine Verteilung der Entwicklungsarbeit auf die Projektmitglieder, so dass diese voneinander weitgehend unabhängig an der Implementierung arbeiten und die jeweiligen Entwicklungsfortschritte über ein git Repository auf https://github.com/EnergyNetSim/Simulator verteilen können. Der jeweilige Entwicklungsfortschritt ist spätestens alle 3 Tage und bei Fertigstellung einzelner Teilfunktionen auf das git Repository zu commiten und pushen.
  
 Zum Schluss müssen eine Dokumentation über das entwickelte Simulationstool geschrieben und Ergebnisse in einem Fazit diskutiert und bewertet werden. 
- 
- 
-
-
-
 
 \section{Projektmanagement und Zeitplan}
-Das Projektmanagement
-
- 
- 
-Projektmanagement:
-•	Ständige Dokumentation der Aktivitäten
-•	Kooperation, Kommunikation, Koordinierung im Team
-•	Fortschrittskontrolle
-•	Qualitätskontrolle, Risikoüberwachung, Quality Gates
- 
- 
+In Anbetracht der genau festgelegten Terminstruktur des Moduls wurde entschieden, das Projektmanagement mit klassischen Methoden (in Anlehnung an IPMA ICB 3.0 \citep{icb}) durchzuführen. Im folgenden seien die Arbeitspakete sowie die Ablauf- und Terminplanung des Projekts exemplarisch gemäß ihrem aktuellen Stand genannt. 
  
 \subsection{Arbeitspakete}
-Phase 0: Vorbereitung
-•	Analyse der Aufgabenstellung
-•	Projektplanung / -vorbereitung
-•	Tools und Kommunikation festlegen
- 
-Phase 1: Literaturrecherche
-•	Literaturrecherche zu Methoden für die Reduzierung des Energieverbrauchs und die Erhöhung der Energieeffizienz in Kommunikationsnetzen
- 
-Phase 2: Modellierung des Netzwerks
-•	Spezifikation eines Netzes und Definition der Szenarien (BAU und energieeffizient)
- 
-Phase 3: Softwareentwicklung
-•	Anforderungsanalyse
-•	Spezifikation
-•	Systemdesign
-•	Programmierung
-•	Test
- 
-Phase 4: Verfassen der Projektdokumentation
-•	Gliederung
-•	Zusammenfassen der in den anderen Phasen dokumentierten Ergebnisse
-•	Abschätzung des Gesamtenergieverbrauchs des Netzes für die zwei Szenarien
-•	Abschätzung der potenziellen Kostenersparnisse durch die Erhöhung der Energieeffizienz
-•	Diskussion der Ergebnisse
- 
-Phase 5: Präsentation
-•	Folien erstellen
-•	Präsentation halten
- 
 
- 
- 
-1. Analyse der Aufgabenstellung
-2. Aktuelle Recherche des State of the Art
-3. Rahmenbedingungen für die wissenschaftliche Arbeit
-4. Wissenschaftliches Ziel, These der Arbeit
-5. Realisierung der Entwicklungs- bzw. Testumgebung
-6. Durchführung der Entwicklung, Untersuchung, Tests
-7. Auswertung der Ergebnisse
-8. Anfertigen der Präsentation
-9. Anfertigen der Projektdokumentation
+\begin{enumerate}
+\item Vorbereitung
+\begin{itemize}
+\item Analyse der Aufgabenstellung
+\item Projektplanung / -vorbereitung
+\item Tools und Kommunikation festlegen
+\item Entwicklungsumgebung aufsetzen
+\end{itemize}
+
+\item Literaturrecherche
+\begin{itemize}
+\item Recherche zu Methoden für die Reduzierung des Energieverbrauchs und die Erhöhung der Energieeffizienz in Kommunikationsnetzen
+\item Projektplanung / -vorbereitung
+\item Tools und Kommunikation festlegen
+\end{itemize}
+
+\item Modellierung des Netzwerks
+\begin{itemize}
+\item Spezifikation eines Netzes
+\item Definition der Szenarien (BAU und energieeffizient)
+\end{itemize}
+
+\item Softwareentwicklung
+\begin{itemize}
+\item Anforderungsanalyse
+\item Spezifikation
+\item Systemdesign
+\item Programmierung
+\item Test
+\end{itemize}
+
+\item Projektdokumentation
+\begin{itemize}
+\item Gliederung
+\item Zusammenfassen der in den anderen Phasen dokumentierten Ergebnisse
+\item Abschätzung des Gesamtenergieverbrauchs des Netzes für die zwei Szenarien
+\item Abschätzung der potenziellen Kostenersparnisse durch die Erhöhung der Energieeffizienz
+\item Diskussion der Ergebnisse
+\end{itemize}
+
+\item Präsentation
+\begin{itemize}
+\item Folien erstellen
+\item Probeläufe
+\item Präsentation halten
+
+\end{itemize}
+
+\item Projektmanagement
+\begin{itemize}
+\item Ständige Dokumentation der Aktivitäten
+\item Kooperation, Kommunikation, Koordinierung im Team
+\item Fortschrittskontrolle
+\item Qualitätskontrolle, Risikoüberwachung, Quality Gates
+\end{itemize}
+
+\end{enumerate}
  
 \subsection{Ablauf- und Terminplanung}
+Die Ablaufplanung ist in Abbildung \ref{fig:gantt} beschrieben und im Ganttchart mit Terminen hinterlegt.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{gantt}
+    \caption{Ablauf- und Terminplan als Gantt-Chart}
+    \label{fig:gantt}
+\end{figure}
 
  \subsection{Meilensteine}
-Meilensteine:
+Die Meilensteine des Projekts können Tabelle \ref{tab:milestones} entnommen werden
  
-M2 Teletutoring 2	KW 16
-M3 Präsenzphase	KW 17
-M4 Teletutoring 3	KW18
-M5 Teletutoring 4	KW20
-M6 Teletutoring 5	KW22
-M7 Präsenzphase	KW23
-M8 Ende AZ-Woche	KW25
-M9 Teletutoring 6	KW27
-M10 Abgabe Projektbericht	TBA (KW27)
-M11 Abgabe Präsentation/Code	TBA (KW28)
-M11 Präsentation	KW28
+
  
- \begin{table}[htbp]
+ \begin{table}[h]
     \centering
     %\begin{tabularx}{\textwidth}{| X | X | X |}
-    \begin{tabularx}{\textwidth}{bss}
+    \begin{tabular}{|c || c c|} 
         \hline
-        Name     & Beschreibung     & Datum     \\ \hline
-        M1         & Teletutoring 1        & KW 14         \\ \hline
-        1         & 3        & 5         \\ \hline
-    \end{tabularx}
+        Name     & Beschreibung     & Datum     \\ 
+        \hline \hline
+        M1         & Teletutoring 1        & KW 14         \\ 
+        M2 & Teletutoring 2	& KW 16\\ 
+M3 & Präsenzphase	& KW 17\\ 
+M4 & Teletutoring 3	& KW18\\ 
+M5 &Teletutoring 4	&KW20\\ 
+M6 &Teletutoring 5	&KW22\\ 
+M7 &Präsenzphase	&KW23\\
+M8 &Ende AZ-Woche	&KW25\\
+M9 &Teletutoring 6	&KW27\\ 
+M10 &Abgabe Projektbericht	&TBA (KW27)\\ 
+M11 &Abgabe Präsentation/Code	&TBA (KW28)\\ 
+M11 &Präsentation	& KW28\\ \hline
+    \end{tabular}
+    
+    \caption{Ablauf- und Terminplan als Gantt-Chart}
+    
+    \label{tab:milestones}
 \end{table}
 
 
-
+\newpage
 \printbibliography 
 
 \end{document}
